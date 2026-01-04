@@ -3,99 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>次の一手 — 将棋盤</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>次の一手問題</title>
 
-    <style>
-        /* 1) 駒フォント読み込み */
-        @font-face {
-            font-family: "ShogiFont";
-            src: url("fonts/shogi03.woff") format("woff");
-        }
-
-        /* 2) 盤のグリッド */
-        #board {
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            width: 90vw;
-            max-width: 360px;
-            aspect-ratio: 1;
-            border: 1px solid #333;
-            margin: 20px auto;
-        }
-
-        /* 3) セル（升目） */
-        .cell {
-            border: 1px solid #888;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-family: "ShogiFont";
-        }
-
-        /* 4) 先手・後手駒 */
-        .black {
-            transform: rotate(0deg);
-        }
-
-        .white {
-            transform: rotate(180deg);
-        }
-    </style>
+    <!-- CSS 読み込み -->
+    <link rel="stylesheet" href="css/shogi.css">
 </head>
 
 <body>
 
-    <h2>次の一手</h2>
+    <h2>次の一手問題</h2>
+
     <div id="board"></div>
 
-    <script>
-        // 駒文字マップ（例: SFEN → 駒フォント）
-        const pieceMap = {
-            p: "歩", l: "香", n: "桂",
-            s: "銀", g: "金", b: "角",
-            r: "飛", k: "玉",
-            P: "歩", L: "香", N: "桂",
-            S: "銀", G: "金", B: "角",
-            R: "飛", K: "玉"
-        };
-
-        fetch("problems.json")
-            .then(res => res.json())
-            .then(data => {
-                drawBoard(data[0].sfen);
-            });
-
-        function drawBoard(sfen) {
-            const boardDiv = document.getElementById("board");
-            boardDiv.innerHTML = "";
-            const ranks = sfen.split(" ")[0].split("/");
-
-            ranks.forEach(rank => {
-                for (let c of rank) {
-                    if (!isNaN(c)) {
-                        for (let i = 0; i < +c; i++)
-                            boardDiv.appendChild(createCell(""));
-                    } else {
-                        const text = pieceMap[c] || "";
-                        const isBlack = c === c.toUpperCase();
-                        boardDiv.appendChild(
-                            createCell(text, isBlack ? "black" : "white")
-                        );
-                    }
-                }
-            });
-        }
-
-        function createCell(text, cls = "") {
-            const div = document.createElement("div");
-            div.className = "cell " + cls;
-            div.textContent = text;
-            return div;
-        }
-    </script>
-
+    <!-- JS 読み込み -->
+    <script src="js/shogi.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,42 @@
+/* 将棋駒フォント */
+@font-face {
+    font-family: "ShogiFont";
+    src: url("fonts/GShogi3_MPLUS1_regular.woff") format("woff");
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* 将棋盤 */
+#board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 90vw;
+    max-width: 360px;
+    aspect-ratio: 1;
+    margin: 20px auto;
+    border: 2px solid #333;
+    background: #f5deb3;
+}
+
+/* 升目 */
+.cell {
+    border: 1px solid #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "ShogiFont";
+    font-size: min(6vw, 24px);
+    user-select: none;
+}
+
+/* 駒の向き */
+.black {
+    transform: rotate(0deg);
+}
+
+.white {
+    transform: rotate(180deg);
+}
