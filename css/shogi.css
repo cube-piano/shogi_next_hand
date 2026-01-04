@@ -1,9 +1,3 @@
-/* 将棋駒フォント */
-@font-face {
-    font-family: "ShogiFont";
-    src: url("fonts/GShogi3_MPLUS1_regular.woff") format("woff");
-}
-
 body {
     font-family: sans-serif;
     text-align: center;
