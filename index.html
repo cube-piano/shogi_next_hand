@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>次の一手問題</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #board {
+            margin: 20px auto;
+            width: 240px;
+            height: 264px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>次の一手問題</h2>
+
+    <div id="board">（盤面表示）</div>
+
+    <input id="move" placeholder="例: 7g7f">
+    <br><br>
+    <button onclick="submitMove()">決定</button>
+
+    <p id="result"></p>
+
+    <script>
+        let problem = null;
+
+        // 問題読み込み
+        fetch("problems.json")
+            .then(res => res.json())
+            .then(data => {
+                problem = data[0];
+                document.getElementById("board").textContent =
+                    "SFEN: " + problem.sfen;
+            });
+
+        function submitMove() {
+            const move = document.getElementById("move").value;
+            const result = document.getElementById("result");
+
+            if (!problem) return;
+
+            if (problem.answers.includes(move)) {
+                result.textContent = "正解！ " + problem.comment;
+            } else {
+                result.textContent = "不正解…";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
