@@ -5,22 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>次の一手問題</title>
+
     <style>
         body {
             font-family: sans-serif;
             text-align: center;
-            margin: 20px;
         }
 
         #board {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            width: 90vw;
+            max-width: 360px;
+            aspect-ratio: 9 / 10;
             margin: 20px auto;
-            width: 240px;
-            height: 264px;
-            border: 1px solid #333;
+            border: 2px solid #333;
+            background: #f5deb3;
+        }
+
+        .cell {
+            border: 1px solid #555;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 12px;
+            font-size: min(6vw, 24px);
+            user-select: none;
+        }
+
+        .black {
+            transform: rotate(0deg);
+        }
+
+        .white {
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -29,39 +46,58 @@
 
     <h2>次の一手問題</h2>
 
-    <div id="board">（盤面表示）</div>
-
-    <input id="move" placeholder="例: 7g7f">
-    <br><br>
-    <button onclick="submitMove()">決定</button>
-
-    <p id="result"></p>
+    <div id="board"></div>
 
     <script>
-        let problem = null;
+        const pieceMap = {
+            p: "歩", l: "香", n: "桂", s: "銀",
+            g: "金", b: "角", r: "飛", k: "玉"
+        };
 
-        // 問題読み込み
         fetch("problems.json")
             .then(res => res.json())
             .then(data => {
-                problem = data[0];
-                document.getElementById("board").textContent =
-                    "SFEN: " + problem.sfen;
+                drawBoardFromSFEN(data[0].sfen);
             });
 
-        function submitMove() {
-            const move = document.getElementById("move").value;
-            const result = document.getElementById("result");
+        function drawBoardFromSFEN(sfen) {
+            const boardDiv = document.getElementById("board");
+            boardDiv.innerHTML = "";
 
-            if (!problem) return;
+            const boardPart = sfen.split(" ")[0];
+            const ranks = boardPart.split("/");
 
-            if (problem.answers.includes(move)) {
-                result.textContent = "正解！ " + problem.comment;
-            } else {
-                result.textContent = "不正解…";
-            }
+            ranks.forEach(rank => {
+                for (let i = 0; i < rank.length; i++) {
+                    const c = rank[i];
+
+                    if (isNumber(c)) {
+                        for (let j = 0; j < Number(c); j++) {
+                            boardDiv.appendChild(createCell(""));
+                        }
+                    } else {
+                        const isBlack = c === c.toUpperCase(); // ← 修正点
+                        const piece = pieceMap[c.toLowerCase()] || "";
+                        boardDiv.appendChild(
+                            createCell(piece, isBlack ? "black" : "white")
+                        );
+                    }
+                }
+            });
+        }
+
+        function createCell(text, colorClass = "") {
+            const div = document.createElement("div");
+            div.className = "cell " + colorClass;
+            div.textContent = text;
+            return div;
+        }
+
+        function isNumber(c) {
+            return c >= "0" && c <= "9";
         }
     </script>
+
 
 </body>
 
