@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     text-align: center;
+    justify-items: center;
 }
 
 /* 将棋盤 */
@@ -8,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     aspect-ratio: 1;
-    margin: 20px auto;
+    margin: 5px auto;
     border: 2px solid #333;
     background: #f5deb3;
     width: 378px;
@@ -17,13 +18,17 @@ body {
 
 /* 升目 */
 .cell {
-    border: 1px solid #777;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: min(6vw, 24px);
     width: 40px;
     height: 40px;
+}
+
+/* マスの枠線 */
+.border {
+    border: 1px solid #777;
 }
 
 /* 駒の向き */
@@ -35,14 +40,10 @@ body {
     transform: rotate(180deg);
 }
 
-#hands {
-    display: flex;
-    justify-content: space-between;
-    max-width: 360px;
-    margin: 0 auto;
-}
-
 #black-hand,
 #white-hand {
+    display: flex;
+    width: 378px;
+    text-align: center;
     font-size: 20px;
 }

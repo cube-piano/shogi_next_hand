@@ -41,7 +41,7 @@ function drawBoardFromSFEN(sfen) {
             // 空マス
             if (isNumber(c)) {
                 for (let j = 0; j < Number(c); j++) {
-                    boardDiv.appendChild(createCell(""));
+                    boardDiv.appendChild(createCell("", "", true));
                 }
             }
             // 成り駒
@@ -50,7 +50,7 @@ function drawBoardFromSFEN(sfen) {
                 const isBlack = p === p.toUpperCase();
                 const piece = promotedMap[p.toLowerCase()];
                 boardDiv.appendChild(
-                    createCell(piece, isBlack ? "black" : "white")
+                    createCell(piece, isBlack ? "black" : "white", true)
                 );
             }
             // 通常駒
@@ -58,7 +58,7 @@ function drawBoardFromSFEN(sfen) {
                 const isBlack = c === c.toUpperCase();
                 const piece = pieceMap[c.toLowerCase()] || "";
                 boardDiv.appendChild(
-                    createCell(piece, isBlack ? "black" : "white")
+                    createCell(piece, isBlack ? "black" : "white", true)
                 );
             }
         }
@@ -67,9 +67,10 @@ function drawBoardFromSFEN(sfen) {
     drawHands(handPart);
 }
 
-function createCell(text, colorClass = "") {
+function createCell(text, colorClass = "", cellBorder) {
     const div = document.createElement("div");
-    div.className = "cell " + colorClass;
+    border = cellBorder ? "border " : ""
+    div.className = "cell " + border + colorClass;
     div.textContent = text;
     return div;
 }
@@ -77,27 +78,37 @@ function createCell(text, colorClass = "") {
 function isNumber(c) {
     return c >= "0" && c <= "9";
 }
-
 function drawHands(handPart) {
-    document.getElementById("black-hand").textContent = "";
-    document.getElementById("white-hand").textContent = "";
+    const blackHand = document.getElementById("black-hand");
+    const whiteHand = document.getElementById("white-hand");
 
-    if (handPart === "-") return;
+    // クリア
+    blackHand.innerHTML = "";
+    whiteHand.innerHTML = "";
 
-    let count = 1;
+    if (handPart === "-" || !handPart) return;
+
+    let countStr = "";
 
     for (let c of handPart) {
+        // 数字（枚数）
         if (isNumber(c)) {
-            count = Number(c);
+            countStr += c;   // 複数桁対応
         } else {
+            const count = countStr === "" ? 1 : Number(countStr);
+            countStr = "";
+
             const isBlack = c === c.toUpperCase();
             const piece = pieceMap[c.toLowerCase()];
-            const target = isBlack
-                ? document.getElementById("black-hand")
-                : document.getElementById("white-hand");
+            const target = isBlack ? blackHand : whiteHand;
 
-            target.textContent += piece.repeat(count);
-            count = 1;
+            // 枚数分だけ描画
+            for (let i = 0; i < count; i++) {
+                target.appendChild(
+                    createCell(piece, isBlack ? "black" : "white", false)
+                );
+            }
         }
     }
 }
+
