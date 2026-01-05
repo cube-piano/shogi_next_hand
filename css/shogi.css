@@ -34,3 +34,16 @@ body {
 .white {
     transform: rotate(180deg);
 }
+
+#hands {
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+#black-hand,
+#white-hand {
+    font-family: "ShogiFont";
+    font-size: 20px;
+}

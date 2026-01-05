@@ -118,7 +118,6 @@ function drawBoardFromSFEN(sfen) {
     drawHands(handPart);
 }
 
-
 function createCell(text, colorClass = "") {
     const div = document.createElement("div");
     div.className = "cell " + colorClass;
@@ -128,4 +127,28 @@ function createCell(text, colorClass = "") {
 
 function isNumber(c) {
     return c >= "0" && c <= "9";
+}
+
+function drawHands(handPart) {
+    document.getElementById("black-hand").textContent = "";
+    document.getElementById("white-hand").textContent = "";
+
+    if (handPart === "-") return;
+
+    let count = 1;
+
+    for (let c of handPart) {
+        if (isNumber(c)) {
+            count = Number(c);
+        } else {
+            const isBlack = c === c.toUpperCase();
+            const piece = pieceMap[c.toLowerCase()];
+            const target = isBlack
+                ? document.getElementById("black-hand")
+                : document.getElementById("white-hand");
+
+            target.textContent += piece.repeat(count);
+            count = 1;
+        }
+    }
 }
