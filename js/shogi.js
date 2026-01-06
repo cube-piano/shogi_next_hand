@@ -13,12 +13,35 @@ const promotedMap = {
     r: "龍"
 };
 
+let currentProblem = null;
+
+document
+    .getElementById("answer-btn")
+    .addEventListener("click", () => {
+        if (!currentProblem) return;
+
+        document.getElementById("answer-text").textContent =
+            currentProblem.answers.join(", ");
+
+        document.getElementById("comment-text").textContent =
+            currentProblem.comment;
+
+        document.getElementById("answer-area").style.display = "block";
+        document.getElementById("answer-btn").style.display = "None";
+        document.getElementById("correct-btn").style.display = "block";
+        document.getElementById("incorrect-btn").style.display = "block";
+    });
+
 
 // 問題読み込み
 fetch("problems.json")
     .then(res => res.json())
     .then(data => {
-        drawBoardFromSFEN(data[0].sfen);
+        currentProblem = data[0];   // 今回は1問目
+        drawBoardFromSFEN(currentProblem.sfen);
+
+        const sfenParts = currentProblem.sfen.split(" ");
+        drawHands(sfenParts[2]);
     })
     .catch(err => {
         console.error("problems.json 読み込み失敗", err);
