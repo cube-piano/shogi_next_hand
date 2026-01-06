@@ -13,15 +13,18 @@ const promotedMap = {
     r: "龍"
 };
 
-let currentProblem = null;
+let problemFiles = []; // 問題のjsonファイル名一覧
+let currentIndex = 0; // 問題のindex
+let currentProblem = null; // 現在の問題
 
+// 解答表示ボタンを押したときの処理
 document
     .getElementById("answer-btn")
     .addEventListener("click", () => {
         if (!currentProblem) return;
 
         document.getElementById("answer-text").textContent =
-            currentProblem.answers.join(", ");
+            currentProblem.answers;
 
         document.getElementById("comment-text").textContent =
             currentProblem.comment;
@@ -32,21 +35,61 @@ document
         document.getElementById("incorrect-btn").style.display = "block";
     });
 
+document.getElementById("correct-btn").onclick = () => {
+    if (currentIndex < problemFiles.length - 1) {
+        currentIndex += 1;
+        loadProblemByIndex(currentIndex);
+    }
+};
 
-// 問題読み込み
-fetch("problems.json")
+document.getElementById("incorrect-btn").onclick = () => {
+    if (currentIndex > 0) {
+        currentIndex -= 1;
+        loadProblemByIndex(currentIndex);
+    }
+};
+
+// 問題一覧読み込み
+fetch("problems/index.json")
     .then(res => res.json())
-    .then(data => {
-        currentProblem = data[0];   // 今回は1問目
-        drawBoardFromSFEN(currentProblem.sfen);
-
-        const sfenParts = currentProblem.sfen.split(" ");
-        drawHands(sfenParts[2]);
+    .then(list => {
+        problemFiles = list;
+        loadProblemByIndex(0);
     })
     .catch(err => {
-        console.error("problems.json 読み込み失敗", err);
+        console.error("index.json 読み込み失敗", err);
     });
 
+// indexを指定すると問題を読み込む
+function loadProblemByIndex(index) {
+    fetch("problems/" + problemFiles[index])
+        .then(res => res.json())
+        .then(data => {
+            const problem = Array.isArray(data) ? data[0] : data;
+            currentProblem = problem;
+            renderProblem(problem);
+        });
+}
+
+// 読み込んだ問題の表示
+function renderProblem(problem) {
+    if (!problem || !problem.sfen) {
+        console.error("不正な問題データ:", problem);
+        return;
+    }
+
+    document.getElementById("problem-id").textContent = problem.id;
+
+    drawBoardFromSFEN(problem.sfen);
+    drawHands(problem.sfen.split(" ")[2]);
+
+    document.getElementById("answer-area").style.display = "None";
+    document.getElementById("answer-btn").style.display = "block";
+    document.getElementById("correct-btn").style.display = "None";
+    document.getElementById("incorrect-btn").style.display = "None";
+}
+
+// 盤面sfenを与えられて，盤面と持ち駒を描画する
 function drawBoardFromSFEN(sfen) {
     const boardDiv = document.getElementById("board");
     boardDiv.innerHTML = "";
@@ -86,10 +129,10 @@ function drawBoardFromSFEN(sfen) {
             }
         }
     });
-
     drawHands(handPart);
 }
 
+// マスを描画する(枠線の有無を選択できる)
 function createCell(text, colorClass = "", cellBorder) {
     const div = document.createElement("div");
     border = cellBorder ? "border " : ""
@@ -98,9 +141,12 @@ function createCell(text, colorClass = "", cellBorder) {
     return div;
 }
 
+// 数字が範囲内かを判定する
 function isNumber(c) {
     return c >= "0" && c <= "9";
 }
+
+// 持ち駒描画
 function drawHands(handPart) {
     const blackHand = document.getElementById("black-hand");
     const whiteHand = document.getElementById("white-hand");
