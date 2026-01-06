@@ -8,9 +8,10 @@ KIF_PATH = "input/input4.kif"
 OUT_DIR = Path("output")
 OUT_DIR.mkdir(exist_ok=True)
 
-eval_pattern = re.compile(r"評価値\s*(-?\d+)")
-# 指し手の行を取り出す正規表現
-move_line_pattern = re.compile(r"^\s+\d+\s+")
+# 評価値の行を分析する正規表現
+analysis_pattern = re.compile(
+    r"評価値\s*(-?\d+)\s+読み筋\s+(.+)$"
+)
 
 # 棋譜をすべて読み込む
 def read_kif(path):
@@ -22,33 +23,35 @@ def parse():
     # 棋譜をすべて読み込む
     lines = read_kif(KIF_PATH)
 
-    # --- 評価値抽出 ---
-    evals = []
-    # 1行ずつ読み込む
+    eval_values = [] # 評価値のリスト
+    predicted_hand = [] # 読み筋のリスト
+
+    # 評価値・読み筋を抽出
     for line in lines:
-        # **解析から始まる行(評価値，読み筋)
+        # **解析から始まる行のみ調べる (評価値，読み筋)
         if line.startswith("**解析"):
-            m = eval_pattern.search(line)
-            print(f"eval: {m}")
+            # 正規表現で取り出す
+            m = analysis_pattern.search(line)
             if m:
-                evals.append(int(m.group(1)))
-        # 数字から始まる行 (棋譜の一手)
-        if move_line_pattern.match(line):
-            print("指し手行:", line.strip())
+                eval_value = int(m.group(1)) # 評価値
+                eval_values.append(eval_value)
+                ph = m.group(2) # 読み筋
+                predicted_hand.append(ph)
 
     # --- 解析行を除去 ---
     kif_text = "".join(l for l in lines if not l.startswith("**"))
-
+    # 棋譜を解析
     games = shogi.KIF.Parser.parse_str(kif_text)
     if not games:
         raise RuntimeError("KIFの解析に失敗しました")
+    game = games[0] # gamesはリストになっているので0番目のみ抽出
+    moves = game["moves"]   # 解析結果から指し手のリストを抽出
 
-    game = games[0]
-
+    # 棋譜を並べるための盤面
     board = shogi.Board()
-    moves = game["moves"]   # ← これが正解
-
     last_eval = None
+
+    # ここまで実装確認済み
 
     for i, move in enumerate(moves):
         sfen_before = board.sfen()
@@ -61,10 +64,10 @@ def parse():
         else:
             raise TypeError(f"未知の指し手型: {type(move)}")
 
-        if i >= len(evals):
+        if i >= len(eval_values):
             break
 
-        current_eval = evals[i]
+        current_eval = eval_values[i]
 
         if last_eval is not None:
             diff = last_eval - current_eval
@@ -94,4 +97,3 @@ def parse():
 
 if __name__ == "__main__":
     parse()
-    # print(starts_with_number_regex("   45 s"))
