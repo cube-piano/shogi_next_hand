@@ -1,10 +1,6 @@
-[
-    {
-        "id": "Q0000",
-        "sfen": "lnsgkgsnl/1+r5+b1/p1pp2ppp/9/9/9/P1+PPPPPPP/1B5R1/+L+N+SGKGSNL b S2Pb3p 1",
-        "answers": [
-            "5六歩"
-        ],
-        "comment": "中央を制する一手"
-    }
-]
+{
+    "id": "KIF_M62",
+    "sfen": "lns1S3l/1p1kg+R3/2pppp2g/p6Pp/3n5/P3r3P/2BP+bPP2/1S1GG4/LN2K2NL w S5p 62",
+    "answers": [],
+    "comment": "62手目は評価値が368低下する疑問手"
+}

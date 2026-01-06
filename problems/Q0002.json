@@ -1,10 +1,6 @@
-[
-    {
-        "id": "Q0002",
-        "sfen": "lnsgkgsnl/1+r5+b1/p1ppppppp/9/9/9/P1+PPPPPPP/1B5R1/+L+N+SGKGSNL b S2Pb3p 1",
-        "answers": [
-            "2六歩"
-        ],
-        "comment": "中央を制する一手"
-    }
-]
+{
+    "id": "KIF_M75",
+    "sfen": "ln2k2+B1/3s1g3/p2pp1n2/5r2p/2p6/P8/1PPP1pP1P/1G3s3/LN1KLGSNL b BG3Prs3p 75",
+    "answers": [],
+    "comment": "75手目は評価値が290低下する疑問手"
+}

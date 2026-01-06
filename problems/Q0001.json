@@ -1,8 +1,6 @@
 {
-    "id": "Q0001",
-    "sfen": "lnsgkgsnl/1+r5+b1/p1ppppppp/9/9/9/P1+PPPPPPP/1B5R1/+L+N+SGKGSNL b S2Pb3p 1",
-    "answers": [
-        "1六歩"
-    ],
-    "comment": "中央を制する一手"
+    "id": "KIF_M63",
+    "sfen": "lnskS3l/1p2g+R3/2pppp2g/p6Pp/3n5/P3r3P/2BP+bPP2/1S1GG4/LN2K2NL b S5p 63",
+    "answers": [],
+    "comment": "63手目は評価値が229低下する疑問手"
 }
