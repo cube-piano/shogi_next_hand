@@ -1,0 +1,18 @@
+{
+    "id": "Q0076",
+    "date": "2026/01/04",
+    "sfen": "ln2k2+B1/3s1g3/p2ppPn2/5r2p/2p6/P8/1PPP1pP1P/1G3s3/LN1KLGSNL w BG2Prs3p 76",
+    "answers": [
+        "△同金(42)"
+    ],
+    "real": "５二金(42)",
+    "after": [
+        [
+            "▲４八銀(39)"
+        ]
+    ],
+    "current_eval": -401,
+    "after_eval": 1660,
+    "black_player": "Oyoyosama 六段",
+    "white_player": "doraemon111 六段"
+}

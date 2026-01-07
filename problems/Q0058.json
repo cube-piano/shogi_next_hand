@@ -1,0 +1,18 @@
+{
+    "id": "Q0058",
+    "date": "2026/01/04",
+    "sfen": "ln2k3+B/3sg1g2/p2pp1npp/5r3/2S6/P8/1PP+s2P1P/1G1P1S1R1/LN1KLG1NL w 3Pb4p 58",
+    "answers": [
+        "△４六歩打"
+    ],
+    "real": "７四歩打",
+    "after": [
+        [
+            "▲６七歩(68)"
+        ]
+    ],
+    "current_eval": 372,
+    "after_eval": 610,
+    "black_player": "Oyoyosama 六段",
+    "white_player": "doraemon111 六段"
+}

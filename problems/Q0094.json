@@ -1,0 +1,18 @@
+{
+    "id": "Q0094",
+    "date": "2026/01/04",
+    "sfen": "ln1B3+B1/3s1k3/p2pp1n2/5r2p/2p6/P8/1PPPK1P1P/1G2L+p3/LN1+rgG1NL w G3S2P4p 94",
+    "answers": [
+        "△５八龍(69)"
+    ],
+    "real": "５八と(48)",
+    "after": [
+        [
+            "▲同金(49)"
+        ]
+    ],
+    "current_eval": 2845,
+    "after_eval": 3842,
+    "black_player": "Oyoyosama 六段",
+    "white_player": "doraemon111 六段"
+}

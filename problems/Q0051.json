@@ -1,0 +1,18 @@
+{
+    "id": "Q0051",
+    "date": "2026/01/04",
+    "sfen": "ln2k2nl/3sg1g2/p2pp2pp/1r7/2p1B4/P2S5/1PP+s2P1P/1G3S1R1/LN1K1G1NL b 3Pb4p 51",
+    "answers": [
+        "▲６八歩打"
+    ],
+    "real": "１一角成(55)",
+    "after": [
+        [
+            "△６六成銀(67)"
+        ]
+    ],
+    "current_eval": -331,
+    "after_eval": -731,
+    "black_player": "Oyoyosama 六段",
+    "white_player": "doraemon111 六段"
+}

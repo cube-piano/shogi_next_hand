@@ -25,9 +25,9 @@ document
 
         document.getElementById("answer-text").textContent =
             currentProblem.answers;
-
-        document.getElementById("comment-text").textContent =
-            currentProblem.comment;
+        document.getElementById("real-text").textContent = currentProblem.real;
+        document.getElementById("after-text").textContent =
+            currentProblem.after;
 
         document.getElementById("answer-area").style.display = "block";
         document.getElementById("answer-btn").style.display = "None";
