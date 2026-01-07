@@ -2,11 +2,11 @@
     "id": "Q0069",
     "date": "2026/01/04",
     "sfen": "ln2k2+B1/3s1g3/p2ppgn2/5r2p/2p6/P8/1PPP2P1P/1G3S3/LN1KLG1NL b BS3Prs4p 69",
-    "answers": [
+    "answer_hand": [
         "▲３五銀打"
     ],
-    "real": "３一銀打",
-    "after": [
+    "real_hand": "３一銀打",
+    "after_hands": [
         [
             "△４八飛成(44)"
         ]

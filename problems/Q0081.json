@@ -2,11 +2,11 @@
     "id": "Q0081",
     "date": "2026/01/04",
     "sfen": "ln5+B1/3s1k3/p2pp1n2/5r2p/2p6/P8/1PPP1pP1P/1G3s3/LN1KLGSNL b BG2Prgs4p 81",
-    "answers": [
+    "answer_hand": [
         "▲６一角打"
     ],
-    "real": "４八銀(39)",
-    "after": [
+    "real_hand": "４八銀(39)",
+    "after_hands": [
         [
             "△５二銀打",
             "▲４三歩打",

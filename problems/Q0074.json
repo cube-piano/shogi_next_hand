@@ -2,11 +2,11 @@
     "id": "Q0074",
     "date": "2026/01/04",
     "sfen": "ln2k2+B1/3s1g3/p2pp1n2/5r2p/2p6/P8/1PPP1pP1P/1G7/LN1KLGSNL w BG3Pr2s3p 74",
-    "answers": [
+    "answer_hand": [
         "△４八銀打"
     ],
-    "real": "４八銀打",
-    "after": [
+    "real_hand": "４八銀打",
+    "after_hands": [
         [
             "▲４三歩打"
         ]

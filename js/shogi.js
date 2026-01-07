@@ -24,10 +24,10 @@ document
         if (!currentProblem) return;
 
         document.getElementById("answer-text").textContent =
-            currentProblem.answers;
-        document.getElementById("real-text").textContent = currentProblem.real;
+            currentProblem.answer_hand;
+        document.getElementById("real-text").textContent = currentProblem.real_hand;
         document.getElementById("after-text").textContent =
-            currentProblem.after;
+            currentProblem.after_hands;
 
         document.getElementById("answer-area").style.display = "block";
         document.getElementById("answer-btn").style.display = "None";

@@ -2,11 +2,11 @@
     "id": "Q0080",
     "date": "2026/01/04",
     "sfen": "ln2k2+B1/3s1+P3/p2pp1n2/5r2p/2p6/P8/1PPP1pP1P/1G3s3/LN1KLGSNL w BG2Prgs3p 80",
-    "answers": [
+    "answer_hand": [
         "△同玉(51)"
     ],
-    "real": "４二玉(51)",
-    "after": [
+    "real_hand": "４二玉(51)",
+    "after_hands": [
         [
             "▲４三歩打",
             "△５二玉(42)",

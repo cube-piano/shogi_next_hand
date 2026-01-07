@@ -2,11 +2,11 @@
     "id": "Q0084",
     "date": "2026/01/04",
     "sfen": "ln1B3+B1/3s1k3/p2pp1n2/5r2p/2p6/P8/1PPP2P1P/1G3+p3/LN1KLG1NL w GS2Prg2s4p 84",
-    "answers": [
+    "answer_hand": [
         "△５八銀打"
     ],
-    "real": "５八銀打",
-    "after": [
+    "real_hand": "５八銀打",
+    "after_hands": [
         [
             "▲同香(59)"
         ]
