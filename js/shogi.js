@@ -24,15 +24,18 @@ document
         if (!currentProblem) return;
 
         document.getElementById("answer-text").textContent =
-            currentProblem.answer_hand;
-        document.getElementById("real-text").textContent = currentProblem.real_hand;
+            currentProblem.answer_hand + " (評価値: " + currentProblem.current_eval + ")";
+        document.getElementById("real-text").textContent = currentProblem.real_hand + " (評価値: " + currentProblem.after_eval + ")";
         document.getElementById("after-text").textContent =
             currentProblem.after_hands;
+        document.getElementById("id-text").textContent = currentProblem.id;
+        document.getElementById("date-text").textContent = currentProblem.date;
 
         document.getElementById("answer-area").style.display = "block";
         document.getElementById("answer-btn").style.display = "None";
         document.getElementById("correct-btn").style.display = "block";
         document.getElementById("incorrect-btn").style.display = "block";
+        document.getElementById("detail-area").style.display = "block"
     });
 
 document.getElementById("correct-btn").onclick = () => {
@@ -78,7 +81,8 @@ function renderProblem(problem) {
         return;
     }
 
-    document.getElementById("problem-id").textContent = problem.id;
+    document.getElementById("player-black").textContent = "▲ " + problem.black_player
+    document.getElementById("player-white").textContent = "△ " + problem.white_player
 
     drawBoardFromSFEN(problem.sfen);
     drawHands(problem.sfen.split(" ")[2]);
@@ -87,6 +91,7 @@ function renderProblem(problem) {
     document.getElementById("answer-btn").style.display = "block";
     document.getElementById("correct-btn").style.display = "None";
     document.getElementById("incorrect-btn").style.display = "None";
+    document.getElementById("detail-area").style.display = "None";
 }
 
 // 盤面sfenを与えられて，盤面と持ち駒を描画する

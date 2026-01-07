@@ -11,26 +11,32 @@
 </head>
 
 <body>
-    <h2>次の一手問題</h2>
-    <div id="problem-id"></div>
-    <div id="white-hand"></div>
-    <div id="board"></div>
-    <div id="black-hand"></div>
+    <div id="board-area">
+        <div id="player-white"></div>
+        <div id="white-hand"></div>
+        <div id="board"></div>
+        <div id="black-hand"></div>
+        <div id="player-black"></div>
+    </div>
 
     <!-- 正解の手とその後の手順を示す -->
-    <div id="answer-area" style="display:none;">
+    <div id="answer-area" class="text-area" style="display:none;">
         <p><strong>正解手：</strong><span id="answer-text"></span></p>
         <p><strong>実際の手：</strong><span id="real-text"></span></p>
         <p><strong>その後の手順：</strong><span id="after-text"></span></p>
     </div>
 
-    <!-- 正解を表示するボタン -->
-    <button id="answer-btn">正解表示</button>
-
     <!-- 正解・不正解ボタン -->
     <div id="answer-btn-area">
+        <button id="answer-btn">正解表示</button>
         <button id="correct-btn" style="display: none;">正解</button>
         <button id="incorrect-btn" style="display: none;">不正解</button>
+    </div>
+
+    <!-- その他の詳細情報 -->
+    <div id="detail-area" class="text-area" style="display: none;">
+        <p><strong>問題id：</strong><span id="id-text"></span></p>
+        <p><strong>対局日：</strong><span id="date-text"></span></p>
     </div>
 
     <!-- JS 読み込み -->
