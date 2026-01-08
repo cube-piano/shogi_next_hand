@@ -1,0 +1,43 @@
+{
+    "id": "Q0063",
+    "date": "2026/01/04",
+    "sfen": "ln1R2gnk/7sl/p1ppsg1p1/4pp2p/3P1P3/1SP1P1G1P/P1B1+b1NP1/6SK1/LNr2G2L w 2P2p 54",
+    "last_move": {
+        "usi": "3i2h",
+        "from": "3i",
+        "to": "2h",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△３五歩打"
+    ],
+    "real_hand": "△３五歩打",
+    "after_hands": [
+        [
+            "△３五歩打",
+            "▲２六金(36)",
+            "△８九飛成(79)",
+            "▲３一飛成(61)",
+            "△同銀(22)",
+            "▲４四歩(45)",
+            "△同銀(53)",
+            "▲４八歩打",
+            "△３六桂打",
+            "▲１七玉(28)",
+            "△４八桂成(36)",
+            "▲３二歩打",
+            "△３八成桂(48)",
+            "▲同金(49)",
+            "△１九龍(89)",
+            "▲１八金打",
+            "△１五歩(14)",
+            "▲同歩(16)"
+        ]
+    ],
+    "current_eval": -3125,
+    "after_eval": -2921,
+    "black_player": "super_runner 六段",
+    "white_player": "doraemon111 六段"
+}

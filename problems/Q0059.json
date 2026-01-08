@@ -1,0 +1,27 @@
+{
+    "id": "Q0059",
+    "date": "2026/01/04",
+    "sfen": "ln4gnk/1r3b1sl/p1ppsg1p1/4ppp1p/1pSP5/2P1PPP1P/PPB3NP1/1R2G1S2/LN3GK1L b - 39",
+    "last_move": {
+        "usi": "4a3a",
+        "from": "4a",
+        "to": "3a",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲４七金(58)"
+    ],
+    "real_hand": "▲８六歩(87)",
+    "after_hands": [
+        [
+            "▲４七金(58)",
+            "△７二飛(82)"
+        ]
+    ],
+    "current_eval": -316,
+    "after_eval": -518,
+    "black_player": "super_runner 六段",
+    "white_player": "doraemon111 六段"
+}
