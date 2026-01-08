@@ -1,0 +1,42 @@
+{
+    "id": "Q0052",
+    "date": "2026/01/08",
+    "sfen": "lns1k2nl/2g1r1gs1/pPpppp2p/6R2/9/2P6/P1BPPPP1P/2S1K4/LN1G1GSNL w 2Pb2p 24",
+    "last_move": {
+        "usi": "2d3d",
+        "from": "2d",
+        "to": "3d",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△３三銀(22)"
+    ],
+    "real_hand": "△３三桂(21)",
+    "after_hands": [
+        [
+            "△３三銀(22)",
+            "▲８四飛(34)",
+            "△２七角打",
+            "▲３八銀(39)",
+            "△４五角成(27)",
+            "▲３六歩(37)",
+            "△同馬(45)",
+            "▲３七桂(29)",
+            "△２七歩打",
+            "▲３九金(49)",
+            "△４四銀(33)",
+            "▲同角(77)",
+            "△同歩(43)",
+            "▲２二歩打",
+            "△同金(32)",
+            "▲４三銀打",
+            "△６二飛(52)"
+        ]
+    ],
+    "current_eval": -41,
+    "after_eval": 160,
+    "black_player": "fuudo2022 五段",
+    "white_player": "doraemon113 六段"
+}

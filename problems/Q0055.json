@@ -1,0 +1,26 @@
+{
+    "id": "Q0055",
+    "date": "2026/01/08",
+    "sfen": "ln2k3l/1sg1r1gs1/p1pp1pn1p/4p1+b2/1R7/2P6/P1BPPP2P/2S1K1G2/LN1G2SNL w 4P2p 42",
+    "last_move": {
+        "usi": "4i3h",
+        "from": "4i",
+        "to": "3h",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△４四歩(43)"
+    ],
+    "real_hand": "△８三歩打",
+    "after_hands": [
+        [
+            "△４四歩(43)"
+        ]
+    ],
+    "current_eval": -312,
+    "after_eval": -46,
+    "black_player": "fuudo2022 五段",
+    "white_player": "doraemon113 六段"
+}

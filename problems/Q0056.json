@@ -1,0 +1,42 @@
+{
+    "id": "Q0056",
+    "date": "2026/01/08",
+    "sfen": "l3k3l/1sg1r1gs1/ppnp1pn1p/2p1p1+b2/9/2P6/P1BPPPS1P/1RS1K1G2/LN1G3NL w 4Pp 48",
+    "last_move": {
+        "usi": "8e8h",
+        "from": "8e",
+        "to": "8h",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△４四歩(43)"
+    ],
+    "real_hand": "△６五桂(73)",
+    "after_hands": [
+        [
+            "△４四歩(43)",
+            "▲６六歩(67)",
+            "△５五歩(54)",
+            "▲６七銀(78)",
+            "△６四歩(63)",
+            "▲７五歩(76)",
+            "△６三金(72)",
+            "▲７四歩(75)",
+            "△同金(63)",
+            "▲７五歩打",
+            "△同金(74)",
+            "▲８六角(77)",
+            "△７四金(75)",
+            "▲７五歩打",
+            "△８四金(74)",
+            "▲６五歩(66)",
+            "△同桂(73)"
+        ]
+    ],
+    "current_eval": -367,
+    "after_eval": -142,
+    "black_player": "fuudo2022 五段",
+    "white_player": "doraemon113 六段"
+}
