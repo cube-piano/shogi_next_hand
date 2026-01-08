@@ -1,0 +1,26 @@
+{
+    "id": "Q0040",
+    "date": "2026/01/08",
+    "sfen": "ln1g3nl/1k2gr3/1spp2s1p/pp2p3b/3P2p2/P2BSP3/1P2P1P1P/1KG1G2R1/LN5NL b 2Ps2p 49",
+    "last_move": {
+        "usi": "3b1d",
+        "from": "3b",
+        "to": "1d",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲２一飛成(28)"
+    ],
+    "real_hand": "▲６八金(58)",
+    "after_hands": [
+        [
+            "▲２一飛成(28)"
+        ]
+    ],
+    "current_eval": 35,
+    "after_eval": -802,
+    "black_player": "Museplay 四段",
+    "white_player": "MrAdult4 六段"
+}

@@ -1,0 +1,27 @@
+{
+    "id": "Q0031",
+    "date": "2026/01/08",
+    "sfen": "l5gnl/2r4k1/p2p1+NPs1/2P4pp/1P3S3/2G1P3P/PKS1b+p3/2G6/L3r3L w BGN7Psn 106",
+    "last_move": {
+        "usi": "5e4c+",
+        "from": "5e",
+        "to": "4c",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "△７五桂打"
+    ],
+    "real_hand": "△９九飛成(59)",
+    "after_hands": [
+        [
+            "△７五桂打",
+            "▲８六玉(87)"
+        ]
+    ],
+    "current_eval": -546,
+    "after_eval": 412,
+    "black_player": "haruchandayo 五段",
+    "white_player": "Museplay 四段"
+}

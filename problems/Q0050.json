@@ -1,0 +1,27 @@
+{
+    "id": "Q0050",
+    "date": "2026/01/08",
+    "sfen": "ln1gk2nl/1r1s2g2/ppp1ppspp/3p2p2/7P1/2P2PP2/PP1PP1N1P/1S3S1R1/LN1GKG2L w Bb 16",
+    "last_move": {
+        "usi": "2i3g",
+        "from": "2i",
+        "to": "3g",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△４二玉(51)"
+    ],
+    "real_hand": "△６三銀(62)",
+    "after_hands": [
+        [
+            "△４二玉(51)",
+            "▲１六歩(17)"
+        ]
+    ],
+    "current_eval": 56,
+    "after_eval": 273,
+    "black_player": "doraemon113 六段",
+    "white_player": "mutekipop 四段"
+}

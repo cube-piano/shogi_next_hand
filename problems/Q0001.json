@@ -1,26 +1,40 @@
 {
     "id": "Q0001",
-    "date": "2026/01/04",
-    "sfen": "ln2k2nl/3sg1g2/p2pp2pp/1r7/2p1B4/P2Ss4/1PPP2P1P/1G3S1R1/LN1K1G1NL w 3Pb3p 50",
+    "date": "2026/01/08",
+    "sfen": "ln6l/4g1gk1/p1ppspns1/4p1ppp/PrPP5/4P3P/1P3PPP1/2S1R1SK1/5G1NL b 2BPgnl 47",
     "last_move": {
-        "usi": "B*5e",
-        "from": null,
-        "to": "5e",
-        "piece": "B",
+        "usi": "8b8e",
+        "from": "8b",
+        "to": "8e",
+        "piece": null,
         "promote": false,
-        "drop": true
+        "drop": false
     },
     "answer_hand": [
-        "△８六歩打"
+        "▲５五歩(56)"
     ],
-    "real_hand": "△６七銀成(56)",
+    "real_hand": "▲５五歩(56)",
     "after_hands": [
         [
-            "△８六歩打"
+            "▲５五歩(56)",
+            "△同歩(54)",
+            "▲７七銀(78)",
+            "△７五飛(85)",
+            "▲８六角打",
+            "△６五飛(75)",
+            "▲６八飛(58)",
+            "△８五飛(65)",
+            "▲７六銀(77)",
+            "△８二飛(85)",
+            "▲７一角打",
+            "△８六飛(82)",
+            "▲同歩(87)",
+            "△５七角打",
+            "▲６七飛(68)"
         ]
     ],
-    "current_eval": -563,
-    "after_eval": -331,
-    "black_player": "Oyoyosama 六段",
-    "white_player": "doraemon111 六段"
+    "current_eval": -1191,
+    "after_eval": -1477,
+    "black_player": "Hokutovega56 三段",
+    "white_player": "Museplay 四段"
 }

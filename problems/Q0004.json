@@ -1,27 +1,46 @@
 {
     "id": "Q0004",
-    "date": "2026/01/04",
-    "sfen": "ln2k3+B/3sg1g2/p2pp1npp/4r4/2S6/P8/1PP+s2P1P/1G3S1R1/LN1KLG1NL w 4Pb4p 56",
+    "date": "2026/01/08",
+    "sfen": "lnsg3nl/1r3kg2/p1ppppbs1/6ppp/9/2PB5/P1NPPPP1P/1SG2S1R1/L2K1G1NL b 2Pp 29",
     "last_move": {
-        "usi": "L*5i",
-        "from": null,
-        "to": "5i",
-        "piece": "L",
+        "usi": "5a4b",
+        "from": "5a",
+        "to": "4b",
+        "piece": null,
         "promote": false,
-        "drop": true
+        "drop": false
     },
     "answer_hand": [
-        "△４七歩打"
+        "▲５八金(49)"
     ],
-    "real_hand": "△４四飛(54)",
+    "real_hand": "▲３六歩(37)",
     "after_hands": [
         [
-            "△４七歩打",
-            "▲同銀(48)"
+            "▲５八金(49)",
+            "△６二銀(71)",
+            "▲３六歩(37)",
+            "△６四歩(63)",
+            "▲５六歩(57)",
+            "△６六角(33)",
+            "▲同歩(67)",
+            "△５二金(61)",
+            "▲８七歩打",
+            "△６三銀(62)",
+            "▲７九玉(69)",
+            "△４四歩(43)",
+            "▲６七金(58)",
+            "△３一玉(42)",
+            "▲８九玉(79)",
+            "△１五歩(14)",
+            "▲５七銀(48)",
+            "△５四銀(63)",
+            "▲９六歩(97)",
+            "△９四歩(93)",
+            "▲４六銀(57)"
         ]
     ],
-    "current_eval": -82,
-    "after_eval": 363,
-    "black_player": "Oyoyosama 六段",
-    "white_player": "doraemon111 六段"
+    "current_eval": -218,
+    "after_eval": -506,
+    "black_player": "haruchandayo 五段",
+    "white_player": "Museplay 四段"
 }

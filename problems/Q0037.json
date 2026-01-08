@@ -1,0 +1,26 @@
+{
+    "id": "Q0037",
+    "date": "2026/01/08",
+    "sfen": "ln1g3nl/1k2grb2/1sppp1spp/pp3p3/3PS1pP1/P3SP3/1P2P1P1P/1KG1G2R1/LN5NL b Bp 39",
+    "last_move": {
+        "usi": "7b8c",
+        "from": "7b",
+        "to": "8c",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲６四歩(65)"
+    ],
+    "real_hand": "▲６六角打",
+    "after_hands": [
+        [
+            "▲６四歩(65)"
+        ]
+    ],
+    "current_eval": 275,
+    "after_eval": -716,
+    "black_player": "Museplay 四段",
+    "white_player": "MrAdult4 六段"
+}

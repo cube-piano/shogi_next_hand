@@ -1,0 +1,26 @@
+{
+    "id": "Q0028",
+    "date": "2026/01/08",
+    "sfen": "l2S2gnl/2g1r2k1/p2p1pPs1/2P4pp/1PG1NS3/4P3P/PKS2+p3/2G6/L3r3L w BN6Pbn 100",
+    "last_move": {
+        "usi": "8h8g",
+        "from": "8h",
+        "to": "8g",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△６九角打"
+    ],
+    "real_hand": "△５七角打",
+    "after_hands": [
+        [
+            "△６九角打"
+        ]
+    ],
+    "current_eval": -1113,
+    "after_eval": 15,
+    "black_player": "haruchandayo 五段",
+    "white_player": "Museplay 四段"
+}

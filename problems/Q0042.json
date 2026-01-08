@@ -1,0 +1,43 @@
+{
+    "id": "Q0042",
+    "date": "2026/01/08",
+    "sfen": "ln1g3n1/1k2g4/1spp4p/pp2p3b/3P2p2/P2+BSP3/1P2P1P1P/1KGG5/LN5+rL w RSL2Psn2p 58",
+    "last_move": {
+        "usi": "1a6f",
+        "from": "1a",
+        "to": "6f",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△６九銀打"
+    ],
+    "real_hand": "△１九龍(29)",
+    "after_hands": [
+        [
+            "△６九銀打",
+            "▲７九金(78)",
+            "△５八銀成(69)",
+            "▲７七金(68)",
+            "△４一歩打",
+            "▲２五歩打",
+            "△６九成銀(58)",
+            "▲７八金(79)",
+            "△１九龍(29)",
+            "▲２二飛打",
+            "△２八龍(19)",
+            "▲２一飛成(22)",
+            "△７四桂打",
+            "▲４四馬(66)",
+            "△６八成銀(69)",
+            "▲７五桂打",
+            "△７八成銀(68)",
+            "▲同金(77)"
+        ]
+    ],
+    "current_eval": -318,
+    "after_eval": -104,
+    "black_player": "Museplay 四段",
+    "white_player": "MrAdult4 六段"
+}

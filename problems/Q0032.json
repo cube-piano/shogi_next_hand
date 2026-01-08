@@ -1,0 +1,41 @@
+{
+    "id": "Q0032",
+    "date": "2026/01/08",
+    "sfen": "l5gnl/2r4k1/p2p1+NPs1/2P4pp/1P3S3/2G1P3P/PKS1b+p3/2G6/+r7L b BGN7Psnl 107",
+    "last_move": {
+        "usi": "5i9i+",
+        "from": "5i",
+        "to": "9i",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲５三角打"
+    ],
+    "real_hand": "▲３四桂打",
+    "after_hands": [
+        [
+            "▲５三角打",
+            "△４二香打",
+            "▲３五桂打",
+            "△同角成(57)",
+            "▲同角成(53)",
+            "△４三香(42)",
+            "▲２五歩打",
+            "△７四飛(72)",
+            "▲７五歩打",
+            "△９四飛(74)",
+            "▲８八銀(77)",
+            "△３九龍(99)",
+            "▲５三角打",
+            "△３五龍(39)",
+            "▲同角成(53)",
+            "△４五香(43)"
+        ]
+    ],
+    "current_eval": 412,
+    "after_eval": -941,
+    "black_player": "haruchandayo 五段",
+    "white_player": "Museplay 四段"
+}

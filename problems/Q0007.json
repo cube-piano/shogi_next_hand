@@ -1,27 +1,26 @@
 {
     "id": "Q0007",
-    "date": "2026/01/04",
-    "sfen": "ln2k1S+B1/3s1g3/p2ppgn2/5r2p/2p6/P8/1PPP2P1P/1G3S3/LN1KLG1NL w B3Prs4p 70",
+    "date": "2026/01/08",
+    "sfen": "ln1g3nl/1r3kg2/p2spp1s1/2pp3pp/1P7/1pPb1S2P/P1N1PP3/1SG1G2R1/L2K3NL w B2P2p 48",
     "last_move": {
-        "usi": "S*3a",
-        "from": null,
-        "to": "3a",
-        "piece": "S",
+        "usi": "4i5h",
+        "from": "4i",
+        "to": "5h",
+        "piece": null,
         "promote": false,
-        "drop": true
+        "drop": false
     },
     "answer_hand": [
-        "△５二金(42)"
+        "△５二金(61)"
     ],
-    "real_hand": "△４七歩打",
+    "real_hand": "△７五歩(74)",
     "after_hands": [
         [
-            "△５二金(42)",
-            "▲３二馬(21)"
+            "△５二金(61)"
         ]
     ],
-    "current_eval": 121,
-    "after_eval": 795,
-    "black_player": "Oyoyosama 六段",
-    "white_player": "doraemon111 六段"
+    "current_eval": -104,
+    "after_eval": 137,
+    "black_player": "haruchandayo 五段",
+    "white_player": "Museplay 四段"
 }

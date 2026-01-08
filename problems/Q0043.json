@@ -1,0 +1,27 @@
+{
+    "id": "Q0043",
+    "date": "2026/01/08",
+    "sfen": "ln1g1p1+R1/1k2g4/1spp4p/pp2p3b/3P2p2/P2+BSP3/1P2P1P1P/1KGG5/LN1s4+r b SNL2Pnlp 63",
+    "last_move": {
+        "usi": "S*6i",
+        "from": null,
+        "to": "6i",
+        "piece": "S",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲６七金(78)"
+    ],
+    "real_hand": "▲２九歩打",
+    "after_hands": [
+        [
+            "▲６七金(78)",
+            "△７五桂打"
+        ]
+    ],
+    "current_eval": -226,
+    "after_eval": -645,
+    "black_player": "Museplay 四段",
+    "white_player": "MrAdult4 六段"
+}
