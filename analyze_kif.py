@@ -91,7 +91,7 @@ def save_index(path: Path, index_list):
 
 
 def parse():
-    # ファイル用id
+    # ファイル用idを取得
     next_id = get_next_problem_id(OUT_DIR)
 
     # index.jsonに書き込む用のリスト
@@ -109,10 +109,11 @@ def parse():
 
     # 評価値・読み筋を抽出
     for line in lines:
-        line = line.replace("　", "")
-        search_date = date_pattern.search(line)
-        search_player = player_pattern.search(line)
+        line = line.replace("　", "") # 全角スペースを除去
+        search_date = date_pattern.search(line) # 日付を探す
+        search_player = player_pattern.search(line) # 先手・後手の名前を探す
 
+        # 日付とプレイヤー名を保持
         if search_date:
             date = search_date.group(1)
         elif search_player:
@@ -174,15 +175,19 @@ def parse():
 
         # 実際に指された手（日本語）
         real_hand = usi_to_japanese(current_board, move)
+
+        # 指した後の評価値
         if len(analysis_by_num[move_num + 1]) <= 0:
             push_move(move, board)
             continue
         after_eval = analysis_by_num[move_num + 1][0]["eval"]
 
         for analysis in analysis_by_num[move_num]:
+            # 現在の評価値と最善の手順
             current_eval = analysis["eval"]
             pv = analysis["pv"]
 
+            # 最善と実際の評価値の差分
             diff = current_eval - after_eval
             # 後手番補正
             if board.turn:
@@ -207,22 +212,27 @@ def parse():
                     "white_player": player_white,
                 }
 
+                # jsonとして保存
                 with open(
                     OUT_DIR / f"{out['id']}.json",
                     "w",
                     encoding="utf-8"
                 ) as fw:
                     json.dump(out, fw, ensure_ascii=False, indent=4)
+
+                # index.jsonに保存するファイル名をリストに追加
                 filename = f"{out['id']}.json"
                 index_list.append(filename)
+
+                # ファイル名に使うインデックスを更新
                 next_id += 1
 
         # 直前の一手を保存
-        usi = normalize_usi(move)
-        last_move = parse_last_move(usi)
+        last_move = parse_last_move(normalize_usi(move))
 
         # 局面を進める
         push_move(move, board)
+    # index.jsonにファイル名のリストを保存
     save_index(INDEX_PATH, index_list)
 
 if __name__ == "__main__":

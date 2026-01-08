@@ -6,6 +6,7 @@ body {
     font-size: 18px;
     font-weight: 450;
     text-align: center;
+    margin: 10px;
 }
 
 #board-area {
@@ -74,6 +75,11 @@ button {
 }
 
 .text-area {
+    width: 450px;
+    margin: auto;
+}
+
+#manu-btn-area {
     width: 450px;
     margin: auto;
 }

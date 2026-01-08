@@ -24,7 +24,7 @@
     <div id="answer-area" class="text-area" style="display:none;">
         <p><strong>正解の手：</strong><span id="answer-text"></span></p>
         <p><strong>実際の手：</strong><span id="real-text"></span></p>
-        <p><strong>その後の手順：</strong><span id="after-text"></span></p>
+        <p><strong>最善手順：</strong><br><span id="after-text"></span></p>
     </div>
 
     <!-- 正解・不正解ボタン -->
@@ -38,10 +38,16 @@
     <div id="detail-area" class="text-area" style="display: none;">
         <p><strong>問題id：</strong><span id="id-text"></span></p>
         <p><strong>対局日：</strong><span id="date-text"></span></p>
+        <p><strong>正答率：</strong><span id="accuracy-text"></span></p>
+    </div>
+
+    <div id="manu-btn-area" style="display: none;">
+        <button id="delete-btn">問題を削除</button>
+        <button id="clear-log-btn">履歴を削除</button>
     </div>
 
     <!-- JS 読み込み -->
-    <script src="js/shogi.js"></script>
+    <script src=" js/shogi.js"></script>
 </body>
 
 </html>
