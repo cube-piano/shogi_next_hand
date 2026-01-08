@@ -8,6 +8,7 @@ from collections import defaultdict
 KIF_PATH = "input/input4.kif"
 OUT_DIR = Path("problems")
 OUT_DIR.mkdir(exist_ok=True)
+INDEX_PATH = OUT_DIR / "index.json"
 
 # 日付を取得する正規表現
 date_pattern = re.compile(r"(\d{4}/\d{2}/\d{2})")
@@ -67,8 +68,35 @@ def parse_last_move(usi: str):
         "drop": False
     }
 
+# 出力フォルダの最大idを取得する
+def get_next_problem_id(out_dir: Path) -> int:
+    nums = []
+    for p in out_dir.glob("Q*.json"):
+        m = re.match(r"Q(\d{4})\.json", p.name)
+        if m:
+            nums.append(int(m.group(1)))
+    return max(nums) + 1 if nums else 0
+
+# index.jsonを読み込む
+def load_index(path: Path):
+    if path.exists():
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+# index_listをindex.jsonに保存する
+def save_index(path: Path, index_list):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(index_list, f, ensure_ascii=False, indent=4)
+
 
 def parse():
+    # ファイル用id
+    next_id = get_next_problem_id(OUT_DIR)
+
+    # index.jsonに書き込む用のリスト
+    index_list = load_index(INDEX_PATH)
+
     # 棋譜をすべて読み込む
     lines = read_kif(KIF_PATH)
 
@@ -155,7 +183,10 @@ def parse():
             current_eval = analysis["eval"]
             pv = analysis["pv"]
 
-            diff = abs(current_eval - after_eval)
+            diff = current_eval - after_eval
+            # 後手番補正
+            if board.turn:
+                diff = -diff
 
             # 200点以上評価値が下がる手の場合は記録
             if diff >= 200:
@@ -163,7 +194,7 @@ def parse():
                 best_hands = re.sub(r"[ ]+", " ", pv).strip().split(" ")
 
                 out = {
-                    "id": f"Q{move_num:04}",
+                    "id": f"Q{next_id:04}",
                     "date": date,
                     "sfen": current_board,
                     "last_move": last_move,
@@ -182,6 +213,9 @@ def parse():
                     encoding="utf-8"
                 ) as fw:
                     json.dump(out, fw, ensure_ascii=False, indent=4)
+                filename = f"{out['id']}.json"
+                index_list.append(filename)
+                next_id += 1
 
         # 直前の一手を保存
         usi = normalize_usi(move)
@@ -189,6 +223,7 @@ def parse():
 
         # 局面を進める
         push_move(move, board)
+    save_index(INDEX_PATH, index_list)
 
 if __name__ == "__main__":
     parse()
