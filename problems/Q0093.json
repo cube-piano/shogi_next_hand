@@ -2,12 +2,21 @@
     "id": "Q0093",
     "date": "2026/01/04",
     "sfen": "ln1B3+B1/3s1k3/p2pp1n2/5r2p/2p6/P8/1PPP2P1P/1G1KL+p3/LN1+rgG1NL b G3S2P4p 93",
+    "last_move": {
+        "usi": "7i6i+",
+        "from": "7i",
+        "to": "6i",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
     "answer_hand": [
         "▲５七玉(68)"
     ],
-    "real_hand": "５七玉(68)",
+    "real_hand": "▲５七玉(68)",
     "after_hands": [
         [
+            "▲５七玉(68)",
             "△５八と(48)",
             "▲６六玉(57)",
             "△４六飛(44)",

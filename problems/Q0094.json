@@ -2,12 +2,21 @@
     "id": "Q0094",
     "date": "2026/01/04",
     "sfen": "ln1B3+B1/3s1k3/p2pp1n2/5r2p/2p6/P8/1PPPK1P1P/1G2L+p3/LN1+rgG1NL w G3S2P4p 94",
+    "last_move": {
+        "usi": "6h5g",
+        "from": "6h",
+        "to": "5g",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
     "answer_hand": [
         "△５八龍(69)"
     ],
-    "real_hand": "５八と(48)",
+    "real_hand": "△５八と(48)",
     "after_hands": [
         [
+            "△５八龍(69)",
             "▲同金(49)"
         ]
     ],

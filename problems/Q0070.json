@@ -2,12 +2,21 @@
     "id": "Q0070",
     "date": "2026/01/04",
     "sfen": "ln2k1S+B1/3s1g3/p2ppgn2/5r2p/2p6/P8/1PPP2P1P/1G3S3/LN1KLG1NL w B3Prs4p 70",
+    "last_move": {
+        "usi": "S*3a",
+        "from": null,
+        "to": "3a",
+        "piece": "S",
+        "promote": false,
+        "drop": true
+    },
     "answer_hand": [
         "△５二金(42)"
     ],
-    "real_hand": "４七歩打",
+    "real_hand": "△４七歩打",
     "after_hands": [
         [
+            "△５二金(42)",
             "▲３二馬(21)"
         ]
     ],

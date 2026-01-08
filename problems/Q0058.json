@@ -2,12 +2,21 @@
     "id": "Q0058",
     "date": "2026/01/04",
     "sfen": "ln2k3+B/3sg1g2/p2pp1npp/5r3/2S6/P8/1PP+s2P1P/1G1P1S1R1/LN1KLG1NL w 3Pb4p 58",
+    "last_move": {
+        "usi": "P*6h",
+        "from": null,
+        "to": "6h",
+        "piece": "P",
+        "promote": false,
+        "drop": true
+    },
     "answer_hand": [
         "△４六歩打"
     ],
-    "real_hand": "７四歩打",
+    "real_hand": "△７四歩打",
     "after_hands": [
         [
+            "△４六歩打",
             "▲６七歩(68)"
         ]
     ],

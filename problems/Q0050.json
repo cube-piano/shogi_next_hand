@@ -2,12 +2,22 @@
     "id": "Q0050",
     "date": "2026/01/04",
     "sfen": "ln2k2nl/3sg1g2/p2pp2pp/1r7/2p1B4/P2Ss4/1PPP2P1P/1G3S1R1/LN1K1G1NL w 3Pb3p 50",
+    "last_move": {
+        "usi": "B*5e",
+        "from": null,
+        "to": "5e",
+        "piece": "B",
+        "promote": false,
+        "drop": true
+    },
     "answer_hand": [
         "△８六歩打"
     ],
-    "real_hand": "６七銀成(56)",
+    "real_hand": "△６七銀成(56)",
     "after_hands": [
-        []
+        [
+            "△８六歩打"
+        ]
     ],
     "current_eval": -563,
     "after_eval": -331,

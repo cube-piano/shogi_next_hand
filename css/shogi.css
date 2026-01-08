@@ -2,6 +2,12 @@ body {
     font-family: sans-serif;
 }
 
+#turn {
+    font-size: 18px;
+    font-weight: 450;
+    text-align: center;
+}
+
 #board-area {
     width: 378px;
     margin: auto;
@@ -39,6 +45,10 @@ body {
 
 .white {
     transform: rotate(180deg);
+}
+
+.highlight {
+    background-color: rgb(238, 13, 13, 0.3);
 }
 
 #black-hand,

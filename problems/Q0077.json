@@ -2,12 +2,21 @@
     "id": "Q0077",
     "date": "2026/01/04",
     "sfen": "ln2k2+B1/3sg4/p2ppPn2/5r2p/2p6/P8/1PPP1pP1P/1G3s3/LN1KLGSNL b BG2Prs3p 77",
+    "last_move": {
+        "usi": "4b5b",
+        "from": "4b",
+        "to": "5b",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
     "answer_hand": [
         "▲４八銀(39)"
     ],
-    "real_hand": "４二金打",
+    "real_hand": "▲４二金打",
     "after_hands": [
         [
+            "▲４八銀(39)",
             "△６一玉(51)",
             "▲８三角打",
             "△７二銀打",

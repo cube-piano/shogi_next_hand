@@ -2,12 +2,22 @@
     "id": "Q0073",
     "date": "2026/01/04",
     "sfen": "ln2k2+B1/3s1g3/p2pp1n2/5r2p/2p6/P8/1PPP1pP1P/1G3S3/LN1KLG1NL b BG3Pr2s3p 73",
+    "last_move": {
+        "usi": "4c4b",
+        "from": "4c",
+        "to": "4b",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
     "answer_hand": [
         "▲４三歩打"
     ],
-    "real_hand": "３九銀(48)",
+    "real_hand": "▲３九銀(48)",
     "after_hands": [
-        []
+        [
+            "▲４三歩打"
+        ]
     ],
     "current_eval": 561,
     "after_eval": -166,

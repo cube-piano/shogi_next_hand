@@ -2,12 +2,21 @@
     "id": "Q0056",
     "date": "2026/01/04",
     "sfen": "ln2k3+B/3sg1g2/p2pp1npp/4r4/2S6/P8/1PP+s2P1P/1G3S1R1/LN1KLG1NL w 4Pb4p 56",
+    "last_move": {
+        "usi": "L*5i",
+        "from": null,
+        "to": "5i",
+        "piece": "L",
+        "promote": false,
+        "drop": true
+    },
     "answer_hand": [
         "△４七歩打"
     ],
-    "real_hand": "４四飛(54)",
+    "real_hand": "△４四飛(54)",
     "after_hands": [
         [
+            "△４七歩打",
             "▲同銀(48)"
         ]
     ],

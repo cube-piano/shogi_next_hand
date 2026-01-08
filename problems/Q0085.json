@@ -2,12 +2,21 @@
     "id": "Q0085",
     "date": "2026/01/04",
     "sfen": "ln1B3+B1/3s1k3/p2pp1n2/5r2p/2p6/P8/1PPP2P1P/1G2s+p3/LN1KLG1NL b GS2Prgs4p 85",
+    "last_move": {
+        "usi": "S*5h",
+        "from": null,
+        "to": "5h",
+        "piece": "S",
+        "promote": false,
+        "drop": true
+    },
     "answer_hand": [
         "▲同香(59)"
     ],
-    "real_hand": "５八香(59)",
+    "real_hand": "▲５八香(59)",
     "after_hands": [
         [
+            "▲同香(59)",
             "△５九飛打",
             "▲同金(49)",
             "△同と(48)",

@@ -84,7 +84,7 @@ function renderProblem(problem) {
     document.getElementById("player-black").textContent = "▲ " + problem.black_player
     document.getElementById("player-white").textContent = "△ " + problem.white_player
 
-    drawBoardFromSFEN(problem.sfen);
+    drawBoardFromSFEN(problem.sfen, problem.last_move);
     drawHands(problem.sfen.split(" ")[2]);
 
     document.getElementById("answer-area").style.display = "None";
@@ -95,53 +95,96 @@ function renderProblem(problem) {
 }
 
 // 盤面sfenを与えられて，盤面と持ち駒を描画する
-function drawBoardFromSFEN(sfen) {
+function drawBoardFromSFEN(sfen, last_move) {
     const boardDiv = document.getElementById("board");
     boardDiv.innerHTML = "";
 
     const parts = sfen.split(" ");
-    const boardPart = parts[0];
+    const boardPart = parts[0];  // 盤面
+    const turn = parts[1]        // 手番
     const handPart = parts[2];   // 持ち駒
+
+    if (turn == "b") {
+        document.getElementById("turn").textContent = "先手の手番です"
+    } else {
+        document.getElementById("turn").textContent = "後手の手番です"
+    }
 
     const ranks = boardPart.split("/");
 
-    ranks.forEach(rank => {
+    // rankIndex: 0 → a段, 8 → i段
+    ranks.forEach((rank, rankIndex) => {
+        let file = 9; // 左から 9筋 → 1筋
+
         for (let i = 0; i < rank.length; i++) {
             const c = rank[i];
 
             // 空マス
             if (isNumber(c)) {
                 for (let j = 0; j < Number(c); j++) {
-                    boardDiv.appendChild(createCell("", "", true));
+                    const square = `${file}${String.fromCharCode(97 + rankIndex)}`;
+                    const highlight = last_move && (last_move.to === square || last_move.from === square);
+
+                    boardDiv.appendChild(
+                        createCell("", "", true, highlight)
+                    );
+                    file--;
                 }
             }
             // 成り駒
             else if (c === "+") {
-                const p = rank[++i];  // 次の文字が本体
+                const p = rank[++i];
                 const isBlack = p === p.toUpperCase();
                 const piece = promotedMap[p.toLowerCase()];
+
+                const square = `${file}${String.fromCharCode(97 + rankIndex)}`;
+                const highlight = last_move && (last_move.to === square || last_move.from === square);
+
                 boardDiv.appendChild(
-                    createCell(piece, isBlack ? "black" : "white", true)
+                    createCell(
+                        piece,
+                        isBlack ? "black" : "white",
+                        true,
+                        highlight
+                    )
                 );
+                file--;
             }
             // 通常駒
             else {
                 const isBlack = c === c.toUpperCase();
                 const piece = pieceMap[c.toLowerCase()] || "";
+
+                const square = `${file}${String.fromCharCode(97 + rankIndex)}`;
+                const highlight = last_move && (last_move.to === square || last_move.from === square);
+
                 boardDiv.appendChild(
-                    createCell(piece, isBlack ? "black" : "white", true)
+                    createCell(
+                        piece,
+                        isBlack ? "black" : "white",
+                        true,
+                        highlight
+                    )
                 );
+                file--;
             }
         }
     });
+
     drawHands(handPart);
 }
 
+
 // マスを描画する(枠線の有無を選択できる)
-function createCell(text, colorClass = "", cellBorder) {
+function createCell(text, colorClass, border, highlight) {
     const div = document.createElement("div");
-    border = cellBorder ? "border " : ""
-    div.className = "cell " + border + colorClass;
+    div.className = "cell " + colorClass;
+    if (border) {
+        div.classList.add("border");
+    }
+    if (highlight) {
+        div.classList.add("highlight");
+    }
     div.textContent = text;
     return div;
 }

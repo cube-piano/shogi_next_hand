@@ -24,11 +24,13 @@ def read_kif(path):
     # ShiftJISで読み込む
     with open(path, encoding="cp932", newline="") as f:
         return f.readlines()
-    
+
+# usi形式の指し手を日本語に直す 
 def usi_to_japanese(sfen, usi_move: str) -> str:
     board = shogi.Board(sfen)
     return shogi.KIF.Exporter.kif_move_from(usi_move, board)
 
+# boardにmoveを適用して局面を進める
 def push_move(move, board):
     if isinstance(move, shogi.Move):
         board.push(move)
@@ -36,7 +38,36 @@ def push_move(move, board):
         board.push_usi(move)
     else:
         raise TypeError(f"未知の指し手型: {type(move)}")
-    
+
+# moveをusi形式に直す
+def normalize_usi(move):
+    if isinstance(move, shogi.Move):
+        return move.usi()
+    return move
+
+# usi形式のfromとtoを分解する
+def parse_last_move(usi: str):
+    # 駒打ち
+    if "*" in usi:
+        return {
+            "usi": usi,
+            "from": None,
+            "to": usi[2:4],
+            "piece": usi[0],
+            "promote": False,
+            "drop": True
+        }
+
+    return {
+        "usi": usi,
+        "from": usi[0:2],
+        "to": usi[2:4],
+        "piece": None,          # 必要なら board から取得
+        "promote": usi.endswith("+"),
+        "drop": False
+    }
+
+
 def parse():
     # 棋譜をすべて読み込む
     lines = read_kif(KIF_PATH)
@@ -45,7 +76,7 @@ def parse():
     player_black = ""
     player_white = ""
 
-    analysis_data = []
+    analysis_data = [] # 読み筋(最善手)のリストを保存する
     pending_analysis = []  # 直近の解析（手数未確定）
 
     # 評価値・読み筋を抽出
@@ -124,24 +155,27 @@ def parse():
             current_eval = analysis["eval"]
             pv = analysis["pv"]
 
-            # PVを1手ずつ分割（全角空白対応）
-            best_hands = re.sub(r"[ ]+", " ", pv).strip().split(" ")
-
-            out = {
-                "id": f"Q{move_num:04}",
-                "date": date,
-                "sfen": current_board,
-                "answer_hand": [best_hands[0]],
-                "real_hand": real_hand,
-                "after_hands": [best_hands[1:]],
-                "current_eval": current_eval,
-                "after_eval": after_eval,
-                "black_player": player_black,
-                "white_player": player_white,
-            }
-
             diff = abs(current_eval - after_eval)
+
+            # 200点以上評価値が下がる手の場合は記録
             if diff >= 200:
+                # PVを1手ずつ分割（全角空白対応）
+                best_hands = re.sub(r"[ ]+", " ", pv).strip().split(" ")
+
+                out = {
+                    "id": f"Q{move_num:04}",
+                    "date": date,
+                    "sfen": current_board,
+                    "last_move": last_move,
+                    "answer_hand": [best_hands[0]],
+                    "real_hand": best_hands[0][0] + real_hand,
+                    "after_hands": [best_hands],
+                    "current_eval": current_eval,
+                    "after_eval": after_eval,
+                    "black_player": player_black,
+                    "white_player": player_white,
+                }
+
                 with open(
                     OUT_DIR / f"{out['id']}.json",
                     "w",
@@ -149,76 +183,12 @@ def parse():
                 ) as fw:
                     json.dump(out, fw, ensure_ascii=False, indent=4)
 
+        # 直前の一手を保存
+        usi = normalize_usi(move)
+        last_move = parse_last_move(usi)
+
         # 局面を進める
         push_move(move, board)
-
-
-    # for i, move in enumerate(moves):
-    #     print(i, move)
-    #     # index外ならスキップ
-    #     if i+1 >= len(predicted_hand) or i+1 >= len(eval_values):
-    #         break
-
-    #     # 現在の局面 (sfen形式)
-    #     current_board = board.sfen()
-    #     print(" " + current_board)
-    #     # 現在の評価値
-    #     current_eval = eval_values[i]
-
-    #     # 実際に指された次の指し手 (日本語)
-    #     next_hand = usi_to_japanese(current_board, move)
-    #     # 最善の手順 (全角スペースを取り除いたうえで一手ごとに分割)
-    #     best_hands = str(predicted_hand[i]).replace("　", "").split(" ")
-    #     best_hands = best_hands[:-1]
-    #     # 指した後の評価値
-    #     next_eval = eval_values[i+1]
-
-    #     # if(i == 49):
-    #     #     print(current_board)
-    #     #     print(current_eval)
-    #     #     print(next_hand)
-    #     #     print(best_hands)
-    #     #     print(next_eval)
-
-    #     if next_eval is not None:
-    #         diff = current_eval - next_eval
-
-    #         # 後手番補正
-    #         if not board.turn:
-    #             diff = -diff
-
-    #         # if diff >= 200:
-    #         if i < 80:
-    #             label = "悪手" if diff >= 500 else "疑問手"
-
-    #             out = {
-    #                 "id": f"Q{i+1:04}",
-    #                 "date": date,
-    #                 "sfen": current_board,
-    #                 "answers": [best_hands[0]],
-    #                 "real": next_hand,
-    #                 "after" : [best_hands[1:]],
-    #                 "current_eval": current_eval,
-    #                 "after_eval": next_eval,
-    #                 "black_player": player_black,
-    #                 "white_player": player_white,
-    #                 "comment": f"{i+1}手目は評価値が{diff}低下する{label}"
-    #             }
-
-    #             with open(
-    #                 OUT_DIR / f"{out['id']}.json",
-    #                 "w",
-    #                 encoding="utf-8"
-    #             ) as fw:
-    #                 json.dump(out, fw, ensure_ascii=False, indent=4)
-
-    #         # --- 型安全な指し手適用 ---
-    #         if isinstance(move, shogi.Move):
-    #             board.push(move)
-    #         elif isinstance(move, str):
-    #             board.push_usi(move)
-    #         else:
-    #             raise TypeError(f"未知の指し手型: {type(move)}")
 
 if __name__ == "__main__":
     parse()
