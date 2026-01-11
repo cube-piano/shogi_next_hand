@@ -1,0 +1,31 @@
+{
+    "id": "Q0312",
+    "date": "2026/01/10",
+    "sfen": "l8/1r2P4/9/pP2+R3+B/2S1s2+S1/P1Ppggp1P/5p+n1+s/1KGP1+pk1+b/LN7 w GNL2Pnl5p 140",
+    "last_move": {
+        "usi": "8f7e",
+        "from": "8f",
+        "to": "7e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△７二香打"
+    ],
+    "real_hand": "△８五香打",
+    "after_hands": [
+        [
+            "△７二香打",
+            "▲９七玉(88)",
+            "△７五香(72)",
+            "▲８六玉(97)",
+            "△７二飛(82)",
+            "▲７五歩(76)"
+        ]
+    ],
+    "current_eval": -2218,
+    "after_eval": -1838,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}

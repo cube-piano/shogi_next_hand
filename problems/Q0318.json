@@ -1,0 +1,27 @@
+{
+    "id": "Q0318",
+    "date": "2026/01/10",
+    "sfen": "l8/1r2P4/9/pP2+R3+B/2PK3+S1/P3ggp1P/3+p1p+n1+s/6k1+b/L+l1G5 w GSNL3Ps2n6p 158",
+    "last_move": {
+        "usi": "7f6e",
+        "from": "7f",
+        "to": "6e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△７三銀打"
+    ],
+    "real_hand": "△６六と(67)",
+    "after_hands": [
+        [
+            "△７三銀打",
+            "▲６三龍(54)"
+        ]
+    ],
+    "current_eval": -1982,
+    "after_eval": -1780,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}

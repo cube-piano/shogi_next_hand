@@ -1,0 +1,27 @@
+{
+    "id": "Q0330",
+    "date": "2026/01/10",
+    "sfen": "l1g4rl/1p2ksg2/p1nppp3/4b4/5G2p/2P6/P1NPPPNPP/2GSK1S2/LR6L w BN4Psp 78",
+    "last_move": {
+        "usi": "3f4e",
+        "from": "3f",
+        "to": "4e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△同角(54)"
+    ],
+    "real_hand": "△３六歩打",
+    "after_hands": [
+        [
+            "△同角(54)",
+            "▲同桂(37)"
+        ]
+    ],
+    "current_eval": 1210,
+    "after_eval": 1490,
+    "black_player": "cardin 六段",
+    "white_player": "Museplay 四段"
+}

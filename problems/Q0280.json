@@ -1,0 +1,27 @@
+{
+    "id": "Q0280",
+    "date": "2026/01/10",
+    "sfen": "ln5nl/1r2g1gk1/2p1pssp1/p4p2p/1p2PPpP1/P1PPS1b1P/1PS3N2/1KG2G2B/LN2R3L b Pp 65",
+    "last_move": {
+        "usi": "B*3f",
+        "from": null,
+        "to": "3f",
+        "piece": "B",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲４四歩(45)"
+    ],
+    "real_hand": "▲２九角(18)",
+    "after_hands": [
+        [
+            "▲４四歩(45)",
+            "△同銀(33)"
+        ]
+    ],
+    "current_eval": 48,
+    "after_eval": -363,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}

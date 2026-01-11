@@ -1,0 +1,42 @@
+{
+    "id": "Q0322",
+    "date": "2026/01/10",
+    "sfen": "lns3snl/2g1k1g2/p1pppp2p/6R2/9/7r1/P1NPPPP1P/1SG1K2P1/L4GSNL b B2Pb3p 25",
+    "last_move": {
+        "usi": "6a7b",
+        "from": "6a",
+        "to": "7b",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲３二飛成(34)"
+    ],
+    "real_hand": "▲８四飛(34)",
+    "after_hands": [
+        [
+            "▲３二飛成(34)",
+            "△同銀(31)",
+            "▲１五角打",
+            "△２四飛打",
+            "▲２六角(15)",
+            "△同飛(24)",
+            "▲３一金打",
+            "△１四角打",
+            "▲１六歩(17)",
+            "△６四歩(63)",
+            "▲１五歩(16)",
+            "△２三角(14)",
+            "▲１四歩(15)",
+            "△同歩(13)",
+            "▲１二歩打",
+            "△同香(11)",
+            "▲２二飛打"
+        ]
+    ],
+    "current_eval": 130,
+    "after_eval": -156,
+    "black_player": "cardin 六段",
+    "white_player": "Museplay 四段"
+}

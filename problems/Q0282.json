@@ -1,0 +1,27 @@
+{
+    "id": "Q0282",
+    "date": "2026/01/10",
+    "sfen": "ln5nl/1r2g1gk1/2p1ps1p1/p3Ps2p/1p4pP1/P1PPS3P/1PS3N+b1/1KG2G3/LN2R2BL w 2P2p 70",
+    "last_move": {
+        "usi": "5e5d",
+        "from": "5e",
+        "to": "5d",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△３六歩(35)"
+    ],
+    "real_hand": "△５四歩(53)",
+    "after_hands": [
+        [
+            "△３六歩(35)",
+            "▲４五桂(37)"
+        ]
+    ],
+    "current_eval": -854,
+    "after_eval": -567,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}
