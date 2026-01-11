@@ -1,0 +1,37 @@
+{
+    "id": "Q0373",
+    "date": "2026/01/10",
+    "sfen": "ln6l/2r1g1gk1/p2p1snp1/1+B4n1p/1pPSp4/P3R3P/1P1PP1+p2/2G1G4/LNK5+b b SL2Ps3p 71",
+    "last_move": {
+        "usi": "5d5e",
+        "from": "5d",
+        "to": "5e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲６六飛(56)"
+    ],
+    "real_hand": "▲７六飛(56)",
+    "after_hands": [
+        [
+            "▲６六飛(56)",
+            "△４六歩打",
+            "▲３五歩打",
+            "△４七歩成(46)",
+            "▲５九金(58)",
+            "△７七歩打",
+            "▲同桂(89)",
+            "△４八と(37)",
+            "▲同金(59)",
+            "△同と(47)",
+            "▲４四歩打",
+            "△同銀(43)"
+        ]
+    ],
+    "current_eval": -357,
+    "after_eval": -796,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

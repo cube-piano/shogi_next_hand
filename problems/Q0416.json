@@ -1,0 +1,27 @@
+{
+    "id": "Q0416",
+    "date": "2026/01/10",
+    "sfen": "ln4p2/7kl/p2p3p1/5B1sp/1pPSp2N1/P1R3S1P/1P1PP+p3/1K1G5/LN4+r1+b w S3gnl4p 162",
+    "last_move": {
+        "usi": "3e4d",
+        "from": "3e",
+        "to": "4d",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△３三金打"
+    ],
+    "real_hand": "△３三桂打",
+    "after_hands": [
+        [
+            "△３三金打",
+            "▲同角成(44)"
+        ]
+    ],
+    "current_eval": -1436,
+    "after_eval": -788,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

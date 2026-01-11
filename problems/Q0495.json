@@ -1,0 +1,27 @@
+{
+    "id": "Q0495",
+    "date": "2026/01/10",
+    "sfen": "l2g1k1nl/1r1s2gp1/p2ppp2p/2p2sR2/1pPn1N3/3S1PP2/PP1PP3P/5S3/LN1GKG2L w B2Pb 32",
+    "last_move": {
+        "usi": "7g6f",
+        "from": "7g",
+        "to": "6f",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△８六歩(85)"
+    ],
+    "real_hand": "△８六歩(85)",
+    "after_hands": [
+        [
+            "△８六歩(85)",
+            "▲６五銀(66)"
+        ]
+    ],
+    "current_eval": 13,
+    "after_eval": 254,
+    "black_player": "doraemon113 六段",
+    "white_player": "zengoman40 五段"
+}

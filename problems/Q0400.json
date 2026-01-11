@@ -1,0 +1,32 @@
+{
+    "id": "Q0400",
+    "date": "2026/01/10",
+    "sfen": "ln7/6Gsl/p2p2spk/8p/1pPSp2L1/P1R3S1P/1P1PP+p3/1K1G5/LN4+r1+b b 2Gb2n5p 133",
+    "last_move": {
+        "usi": "S*2b",
+        "from": null,
+        "to": "2b",
+        "piece": "S",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲同金(32)"
+    ],
+    "real_hand": "▲２一金打",
+    "after_hands": [
+        [
+            "▲同金(32)",
+            "△同銀(33)",
+            "▲３四金打",
+            "△３三金打",
+            "▲３五金打",
+            "△３四金(33)",
+            "▲同金(35)"
+        ]
+    ],
+    "current_eval": -1,
+    "after_eval": -1357,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

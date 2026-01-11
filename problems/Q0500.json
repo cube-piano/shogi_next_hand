@@ -1,0 +1,27 @@
+{
+    "id": "Q0500",
+    "date": "2026/01/10",
+    "sfen": "l4k1nl/1r1sgg1p1/p2ppp2p/2p2sRN1/2PS1N2B/5PP2/P+p1PP3P/5S3/LN1GKG2L b 2Pbp 39",
+    "last_move": {
+        "usi": "3b4b",
+        "from": "3b",
+        "to": "4b",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲８三歩打"
+    ],
+    "real_hand": "▲７四銀(65)",
+    "after_hands": [
+        [
+            "▲８三歩打",
+            "△同飛(82)"
+        ]
+    ],
+    "current_eval": -1192,
+    "after_eval": -1402,
+    "black_player": "doraemon113 六段",
+    "white_player": "zengoman40 五段"
+}

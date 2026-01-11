@@ -1,0 +1,27 @@
+{
+    "id": "Q0418",
+    "date": "2026/01/10",
+    "sfen": "ln4p2/6gkl/p2p2sp1/5BS1p/1pPSp4/P1R3S1P/1P1PP+p3/1K1G5/LN4+r1+b b N2gnl4p 167",
+    "last_move": {
+        "usi": "2d3c",
+        "from": "2d",
+        "to": "3c",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲同銀成(34)"
+    ],
+    "real_hand": "▲３三銀成(34)",
+    "after_hands": [
+        [
+            "▲同銀成(34)",
+            "△同金(32)"
+        ]
+    ],
+    "current_eval": -513,
+    "after_eval": -861,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

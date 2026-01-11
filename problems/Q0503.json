@@ -1,0 +1,37 @@
+{
+    "id": "Q0503",
+    "date": "2026/01/10",
+    "sfen": "lr3k1n1/3sgg1pl/pP1pppp+Pp/2S2s2g/2P2N2B/5PP2/P2PP3P/5S3/LN1K1G1RL w 2Pbn 54",
+    "last_move": {
+        "usi": "2d2c+",
+        "from": "2d",
+        "to": "2c",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "△１五金(14)"
+    ],
+    "real_hand": "△１五金(14)",
+    "after_hands": [
+        [
+            "△１五金(14)",
+            "▲１二と(23)",
+            "△８七角打",
+            "▲６八玉(69)",
+            "△７八角打",
+            "▲５八金(49)",
+            "△４五銀(44)",
+            "▲７九香打",
+            "△７六桂打",
+            "▲７七玉(68)",
+            "△６九角成(78)",
+            "▲４五歩(46)"
+        ]
+    ],
+    "current_eval": -1296,
+    "after_eval": -988,
+    "black_player": "doraemon113 六段",
+    "white_player": "zengoman40 五段"
+}

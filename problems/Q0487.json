@@ -1,0 +1,27 @@
+{
+    "id": "Q0487",
+    "date": "2026/01/10",
+    "sfen": "lr6l/3g5/2k5p/p1ppp4/Pp1nN4/1P7/3PPP2P/1KG1G2+s1/LN2S1rNL b BGS4Pbs2p 73",
+    "last_move": {
+        "usi": "7b7c",
+        "from": "7b",
+        "to": "7c",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲７五歩打"
+    ],
+    "real_hand": "▲８五歩(86)",
+    "after_hands": [
+        [
+            "▲７五歩打",
+            "△５五歩(54)"
+        ]
+    ],
+    "current_eval": -81,
+    "after_eval": -586,
+    "black_player": "king_chasers 七段",
+    "white_player": "doraemon111 六段"
+}

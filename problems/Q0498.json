@@ -1,0 +1,27 @@
+{
+    "id": "Q0498",
+    "date": "2026/01/10",
+    "sfen": "l2g1k1nl/1r1s2gp1/p2ppp2p/2p2sR2/2Pn1N2B/1p1S1PP2/PP1PP3P/5S3/LN1GKG2L w 2Pb 34",
+    "last_move": {
+        "usi": "B*1e",
+        "from": null,
+        "to": "1e",
+        "piece": "B",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "△８七歩成(86)"
+    ],
+    "real_hand": "△５二金(61)",
+    "after_hands": [
+        [
+            "△８七歩成(86)",
+            "▲８三歩打"
+        ]
+    ],
+    "current_eval": -944,
+    "after_eval": -25,
+    "black_player": "doraemon113 六段",
+    "white_player": "zengoman40 五段"
+}

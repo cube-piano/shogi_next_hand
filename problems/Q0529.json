@@ -1,0 +1,26 @@
+{
+    "id": "Q0529",
+    "date": "2026/01/11",
+    "sfen": "ln1r3nl/1kg1g4/1pp2p1pp/p2P+b1p2/4s2P1/P1Pps4/1P+B2PN1P/LSS5R/KNG5L b G2Pp 81",
+    "last_move": {
+        "usi": "P*6f",
+        "from": null,
+        "to": "6f",
+        "piece": "P",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲２四歩(25)"
+    ],
+    "real_hand": "▲８六馬(77)",
+    "after_hands": [
+        [
+            "▲２四歩(25)"
+        ]
+    ],
+    "current_eval": -56,
+    "after_eval": -731,
+    "black_player": "doraemon111 六段",
+    "white_player": "keigo1117 五段"
+}

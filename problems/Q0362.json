@@ -1,0 +1,27 @@
+{
+    "id": "Q0362",
+    "date": "2026/01/10",
+    "sfen": "ln4knl/2r1g1g2/p2pss1p1/4p3p/1pPSbp1P1/P2S2p1P/1P1PP1NR1/2G1G4/LNK5L b BP2p 49",
+    "last_move": {
+        "usi": "3e3f",
+        "from": "3e",
+        "to": "3f",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲５五銀(66)"
+    ],
+    "real_hand": "▲４五桂(37)",
+    "after_hands": [
+        [
+            "▲５五銀(66)",
+            "△３七歩成(36)"
+        ]
+    ],
+    "current_eval": 237,
+    "after_eval": -188,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

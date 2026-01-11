@@ -1,0 +1,33 @@
+{
+    "id": "Q0507",
+    "date": "2026/01/10",
+    "sfen": "lr3k1n1/3sgg1p+P/pP1pppp1p/2S2s3/2P2N2g/5PP2/P2PP3P/2+b2S3/LN2KG1RL b L2Pbn 59",
+    "last_move": {
+        "usi": "8g7h+",
+        "from": "8g",
+        "to": "7h",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲２二飛成(29)"
+    ],
+    "real_hand": "▲５八金(49)",
+    "after_hands": [
+        [
+            "▲２二飛成(29)",
+            "△５一金(52)",
+            "▲２一と(12)",
+            "△５二玉(41)",
+            "▲５八金(49)",
+            "△５五桂打",
+            "▲４九玉(59)",
+            "△６七桂成(55)"
+        ]
+    ],
+    "current_eval": -522,
+    "after_eval": -1055,
+    "black_player": "doraemon113 六段",
+    "white_player": "zengoman40 五段"
+}

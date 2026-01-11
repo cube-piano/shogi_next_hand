@@ -1,0 +1,39 @@
+{
+    "id": "Q0486",
+    "date": "2026/01/10",
+    "sfen": "lr6l/2kg5/2P5p/p1ppp4/Pp1nN4/1P7/3PPP2P/1KG1G2+s1/LN2S1rNL w BGS4Pbsp 72",
+    "last_move": {
+        "usi": "P*7c",
+        "from": null,
+        "to": "7c",
+        "piece": "P",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "△同金(62)"
+    ],
+    "real_hand": "△７三玉(72)",
+    "after_hands": [
+        [
+            "△同金(62)",
+            "▲４五角打",
+            "△４四角打",
+            "▲６六銀打",
+            "△５五角(44)",
+            "▲同銀(66)",
+            "△８六歩(85)",
+            "▲８二歩打",
+            "△８七銀打",
+            "▲同金(78)",
+            "△同歩成(86)",
+            "▲同玉(88)",
+            "△８二飛(81)",
+            "▲８六歩打"
+        ]
+    ],
+    "current_eval": -630,
+    "after_eval": -81,
+    "black_player": "king_chasers 七段",
+    "white_player": "doraemon111 六段"
+}

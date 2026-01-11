@@ -1,0 +1,39 @@
+{
+    "id": "Q0361",
+    "date": "2026/01/10",
+    "sfen": "ln4knl/2r1g1g2/p2pss1p1/3bp1p1p/1pP2pPP1/P3S3P/1PSPP1N2/2G1G2R1/LNK5L b BPp 43",
+    "last_move": {
+        "usi": "B*6d",
+        "from": null,
+        "to": "6d",
+        "piece": "B",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲４八金(58)"
+    ],
+    "real_hand": "▲２七飛(28)",
+    "after_hands": [
+        [
+            "▲４八金(58)",
+            "△４四銀(53)",
+            "▲２四歩(25)",
+            "△同歩(23)",
+            "▲同飛(28)",
+            "△３五銀(44)",
+            "▲２九飛(24)",
+            "△２六歩打",
+            "▲８三角打",
+            "△８二飛(72)",
+            "▲６一角成(83)",
+            "△２二玉(31)",
+            "▲８八玉(79)",
+            "△３三桂(21)"
+        ]
+    ],
+    "current_eval": 398,
+    "after_eval": 175,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

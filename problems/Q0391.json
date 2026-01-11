@@ -1,0 +1,26 @@
+{
+    "id": "Q0391",
+    "date": "2026/01/10",
+    "sfen": "ln2R4/8l/p2p2gpk/6s1p/1pPSp4/P1R4LP/1P1PP+p3/3G5/LNK5+b b 2GNPb2sn4p 115",
+    "last_move": {
+        "usi": "S*3d",
+        "from": null,
+        "to": "3d",
+        "piece": "S",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲３五歩打"
+    ],
+    "real_hand": "▲２五桂打",
+    "after_hands": [
+        [
+            "▲３五歩打"
+        ]
+    ],
+    "current_eval": 2080,
+    "after_eval": 1283,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

@@ -1,0 +1,36 @@
+{
+    "id": "Q0517",
+    "date": "2026/01/10",
+    "sfen": "lr6l/1kg3+B2/3g+P1+R1n/1sp1s2pp/P2p1p3/2PPP3P/3GSP3/KS7/1NG4+b1 w 2N5P2lp 84",
+    "last_move": {
+        "usi": "9i9h",
+        "from": "9i",
+        "to": "9h",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△９五銀(84)"
+    ],
+    "real_hand": "△８五香打",
+    "after_hands": [
+        [
+            "△９五銀(84)",
+            "▲５四と(53)",
+            "△７三金(63)",
+            "▲９六歩打",
+            "△９七歩打",
+            "▲同銀(88)",
+            "△９六銀(95)",
+            "▲同銀(97)",
+            "△同香(91)",
+            "▲９七歩打",
+            "△８四香打"
+        ]
+    ],
+    "current_eval": 1450,
+    "after_eval": 1704,
+    "black_player": "doraemon113 六段",
+    "white_player": "kenjiya 五段"
+}

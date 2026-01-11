@@ -1,0 +1,27 @@
+{
+    "id": "Q0376",
+    "date": "2026/01/10",
+    "sfen": "ln6l/2r3+Nk1/p2p1gnp1/1+B4s1p/1pPSp4/P1R5P/1P1PP+p3/2GG1+p3/LNK5+b w GSLPs3p 82",
+    "last_move": {
+        "usi": "4d3b+",
+        "from": "4d",
+        "to": "3b",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "△同飛(72)"
+    ],
+    "real_hand": "△３二玉(22)",
+    "after_hands": [
+        [
+            "△同飛(72)",
+            "▲８八玉(79)"
+        ]
+    ],
+    "current_eval": 274,
+    "after_eval": 481,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

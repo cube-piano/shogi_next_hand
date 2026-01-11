@@ -1,0 +1,43 @@
+{
+    "id": "Q0523",
+    "date": "2026/01/11",
+    "sfen": "ln1r3nl/1kg1gb3/1pp2p1pp/p5p2/3sB2P1/P1P1P1P2/1P1G1PN1P/LS1R5/KNG5L w S2Psp 50",
+    "last_move": {
+        "usi": "7g5e",
+        "from": "7g",
+        "to": "5e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△６六歩打"
+    ],
+    "real_hand": "△３三角(42)",
+    "after_hands": [
+        [
+            "△６六歩打",
+            "▲５七金(67)",
+            "△３三角(42)",
+            "▲４五桂(37)",
+            "△５五角(33)",
+            "▲同歩(56)",
+            "△５九角打",
+            "▲５八飛(68)",
+            "△２六角成(59)",
+            "▲５四歩(55)",
+            "△同銀(65)",
+            "▲６六金(57)",
+            "△４四馬(26)",
+            "▲５三歩打",
+            "△５一金(52)",
+            "▲６五歩打",
+            "△４五馬(44)",
+            "▲５二銀打"
+        ]
+    ],
+    "current_eval": 305,
+    "after_eval": 642,
+    "black_player": "doraemon111 六段",
+    "white_player": "keigo1117 五段"
+}

@@ -1,0 +1,40 @@
+{
+    "id": "Q0381",
+    "date": "2026/01/10",
+    "sfen": "ln2+Bp2l/2r3k2/p2pG1np1/6s1p/1pPSp4/P1R5P/1P1PP+p3/2GG+p4/LNK5+b b GL2sn3p 93",
+    "last_move": {
+        "usi": "P*4a",
+        "from": null,
+        "to": "4a",
+        "piece": "P",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲４四金打"
+    ],
+    "real_hand": "▲６一馬(51)",
+    "after_hands": [
+        [
+            "▲４四金打",
+            "△６八と(58)",
+            "▲同金(78)",
+            "△５七と(47)",
+            "▲３三馬(51)",
+            "△２一玉(32)",
+            "▲５七金(68)",
+            "△７七歩打",
+            "▲同飛(76)",
+            "△５六桂打",
+            "▲同銀(65)",
+            "△６八銀打",
+            "▲同玉(79)",
+            "△５六歩(55)",
+            "▲同金(57)"
+        ]
+    ],
+    "current_eval": 1638,
+    "after_eval": 791,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

@@ -1,0 +1,36 @@
+{
+    "id": "Q0526",
+    "date": "2026/01/11",
+    "sfen": "ln1r3nl/1kg1g2B1/1ppP1p1pp/p3P1p2/7P1/P1Pps1+b2/1PG1sPN1P/LSS5R/KNG5L w Pp 64",
+    "last_move": {
+        "usi": "B*2b",
+        "from": null,
+        "to": "2b",
+        "piece": "B",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "△３七馬(36)"
+    ],
+    "real_hand": "△５四馬(36)",
+    "after_hands": [
+        [
+            "△３七馬(36)",
+            "▲６六金(77)",
+            "△同銀(57)",
+            "▲同角成(22)",
+            "△５五金打",
+            "▲５三銀打",
+            "△６三金(52)",
+            "▲５六馬(66)",
+            "△同金(55)",
+            "▲５二銀成(53)",
+            "△６二金(63)"
+        ]
+    ],
+    "current_eval": 397,
+    "after_eval": 663,
+    "black_player": "doraemon111 六段",
+    "white_player": "keigo1117 五段"
+}

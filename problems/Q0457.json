@@ -1,0 +1,26 @@
+{
+    "id": "Q0457",
+    "date": "2026/01/10",
+    "sfen": "l6rl/5k3/2g1p2gn/p4pspp/1p1psNp1P/P2PNP3/1PS1P4/1KG2G3/LN5RL w BPbs3p 72",
+    "last_move": {
+        "usi": "1f1e",
+        "from": "1f",
+        "to": "1e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△４五歩(44)"
+    ],
+    "real_hand": "△１五歩(14)",
+    "after_hands": [
+        [
+            "△４五歩(44)"
+        ]
+    ],
+    "current_eval": -490,
+    "after_eval": 131,
+    "black_player": "doraemon111 六段",
+    "white_player": "Mesi001 六段"
+}

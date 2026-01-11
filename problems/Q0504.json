@@ -1,0 +1,42 @@
+{
+    "id": "Q0504",
+    "date": "2026/01/10",
+    "sfen": "lr3k1n1/3sgg1pl/pP1pppp+Pp/2S2s3/2P2N2g/5PP2/P2PP3P/5S3/LN1K1G1RL b 2P2bn 55",
+    "last_move": {
+        "usi": "1d1e",
+        "from": "1d",
+        "to": "1e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲１二と(23)"
+    ],
+    "real_hand": "▲１二と(23)",
+    "after_hands": [
+        [
+            "▲１二と(23)",
+            "△８七角打",
+            "▲６八玉(69)",
+            "△６九角打",
+            "▲７九香打",
+            "△３六角成(69)",
+            "▲５八金(49)",
+            "△７八歩打",
+            "▲２二飛成(29)",
+            "△７九歩成(78)",
+            "▲２一龍(22)",
+            "△３一香打",
+            "▲４七銀(48)",
+            "△６九角成(87)",
+            "▲７七玉(68)",
+            "△７八と(79)",
+            "▲８六玉(77)"
+        ]
+    ],
+    "current_eval": -988,
+    "after_eval": -1267,
+    "black_player": "doraemon113 六段",
+    "white_player": "zengoman40 五段"
+}

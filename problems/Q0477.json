@@ -1,0 +1,27 @@
+{
+    "id": "Q0477",
+    "date": "2026/01/10",
+    "sfen": "lr1k3+Bl/3g5/p1nspp2p/2pp5/1p2N4/2P6/PPGPPP1+bP/1S1K3+s1/LN3G1NL b GS3Prp 47",
+    "last_move": {
+        "usi": "5d2g+",
+        "from": "5d",
+        "to": "2g",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲６三桂成(55)"
+    ],
+    "real_hand": "▲５八金(49)",
+    "after_hands": [
+        [
+            "▲６三桂成(55)",
+            "△同馬(27)"
+        ]
+    ],
+    "current_eval": -505,
+    "after_eval": -904,
+    "black_player": "king_chasers 七段",
+    "white_player": "doraemon111 六段"
+}

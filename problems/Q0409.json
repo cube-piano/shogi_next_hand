@@ -1,0 +1,27 @@
+{
+    "id": "Q0409",
+    "date": "2026/01/10",
+    "sfen": "ln4p2/6s1l/p2p2bpk/6G1p/1pPSp2L1/P1R3S1P/1P1PP+p3/1K1G5/LN4+r1+b b Ggs2n4p 149",
+    "last_move": {
+        "usi": "S*3b",
+        "from": null,
+        "to": "3b",
+        "piece": "S",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "▲２三香成(25)"
+    ],
+    "real_hand": "▲３三金(34)",
+    "after_hands": [
+        [
+            "▲２三香成(25)",
+            "△同銀(32)"
+        ]
+    ],
+    "current_eval": -200,
+    "after_eval": -1535,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

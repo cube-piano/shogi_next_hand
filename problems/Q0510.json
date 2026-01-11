@@ -1,0 +1,27 @@
+{
+    "id": "Q0510",
+    "date": "2026/01/10",
+    "sfen": "l4r2l/1kg6/1sngp1b1n/pppps1Ppp/5pB2/P1PPP3P/1P1GSP3/LS5R1/KNG4NL w 2p 54",
+    "last_move": {
+        "usi": "P*3d",
+        "from": null,
+        "to": "3d",
+        "piece": "P",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "△５一角(33)"
+    ],
+    "real_hand": "△４二角(33)",
+    "after_hands": [
+        [
+            "△５一角(33)",
+            "▲３八飛(28)"
+        ]
+    ],
+    "current_eval": 127,
+    "after_eval": 386,
+    "black_player": "doraemon113 六段",
+    "white_player": "kenjiya 五段"
+}

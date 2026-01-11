@@ -1,0 +1,27 @@
+{
+    "id": "Q0408",
+    "date": "2026/01/10",
+    "sfen": "ln4p2/8l/p2p2bpk/6G1p/1pPSp2L1/P1R3S1P/1P1PP+p3/1K1G5/LN4+r1+b w Gg2s2n4p 148",
+    "last_move": {
+        "usi": "G*3d",
+        "from": null,
+        "to": "3d",
+        "piece": "G",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "△３二金打"
+    ],
+    "real_hand": "△３二銀打",
+    "after_hands": [
+        [
+            "△３二金打",
+            "▲３五銀(36)"
+        ]
+    ],
+    "current_eval": -890,
+    "after_eval": -200,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}

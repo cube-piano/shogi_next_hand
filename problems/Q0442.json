@@ -1,0 +1,38 @@
+{
+    "id": "Q0442",
+    "date": "2026/01/10",
+    "sfen": "ln4p2/9/p2p4g/2P3+r1p/1p1Sp1kP1/P1R3+p1P/1PNPP4/K1G6/L1L5+b b b2g3s2nl4p 207",
+    "last_move": {
+        "usi": "4d3e",
+        "from": "4d",
+        "to": "3e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲７三歩成(74)"
+    ],
+    "real_hand": "▲５六銀(65)",
+    "after_hands": [
+        [
+            "▲７三歩成(74)",
+            "△５三角打",
+            "▲８八玉(98)",
+            "△８四桂打",
+            "▲６三と(73)",
+            "△７五香打",
+            "▲５三と(63)",
+            "△７六桂(84)",
+            "▲同銀(65)",
+            "△同香(75)",
+            "▲５四角打",
+            "△同龍(34)",
+            "▲同と(53)"
+        ]
+    ],
+    "current_eval": -4138,
+    "after_eval": -4496,
+    "black_player": "doraemon111 六段",
+    "white_player": "rei2010 七段"
+}
