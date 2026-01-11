@@ -1,0 +1,27 @@
+{
+    "id": "Q0346",
+    "date": "2026/01/10",
+    "sfen": "ln6l/2g1ksg2/ppspppn2/9/8p/2P3Pr1/P1NPPP1PP/2GSK1S2/LR5NL w BG3Pbp 62",
+    "last_move": {
+        "usi": "P*2g",
+        "from": null,
+        "to": "2g",
+        "piece": "P",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "△３六飛(26)"
+    ],
+    "real_hand": "△２一飛(26)",
+    "after_hands": [
+        [
+            "△３六飛(26)",
+            "▲３七銀(38)"
+        ]
+    ],
+    "current_eval": 182,
+    "after_eval": 421,
+    "black_player": "cardin 六段",
+    "white_player": "Museplay 四段"
+}

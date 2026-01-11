@@ -1,0 +1,43 @@
+{
+    "id": "Q0350",
+    "date": "2026/01/10",
+    "sfen": "l1g4rl/1p2ksg2/p1nppp3/4G4/8p/2P3p2/P1NPPPNPP/2GSK1S2/LR6L w 2BN4Ps 80",
+    "last_move": {
+        "usi": "4e5d",
+        "from": "4e",
+        "to": "5d",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△同歩(53)"
+    ],
+    "real_hand": "△３七歩成(36)",
+    "after_hands": [
+        [
+            "△同歩(53)",
+            "▲２五桂(37)",
+            "△２八金打",
+            "▲３三歩打",
+            "△３一金(32)",
+            "▲４六角打",
+            "△３八金(28)",
+            "▲７三角成(46)",
+            "△３七歩成(36)",
+            "▲６九玉(58)",
+            "△２五飛(21)",
+            "▲３二歩成(33)",
+            "△同金(31)",
+            "▲４四桂打",
+            "△同歩(43)",
+            "▲３四角打",
+            "△４三銀打",
+            "▲２五角(34)"
+        ]
+    ],
+    "current_eval": 1580,
+    "after_eval": 1781,
+    "black_player": "cardin 六段",
+    "white_player": "Museplay 四段"
+}

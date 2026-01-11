@@ -1,0 +1,27 @@
+{
+    "id": "Q0347",
+    "date": "2026/01/10",
+    "sfen": "ln5rl/2g1ksg2/p+Bspppn2/9/8p/2P3b2/P1NPPPNPP/2GSK1S2/LR6L w G4P2p 68",
+    "last_move": {
+        "usi": "6e8c+",
+        "from": "6e",
+        "to": "8c",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "△同金(72)"
+    ],
+    "real_hand": "△７一金(72)",
+    "after_hands": [
+        [
+            "△同金(72)",
+            "▲同飛成(89)"
+        ]
+    ],
+    "current_eval": 644,
+    "after_eval": 1475,
+    "black_player": "cardin 六段",
+    "white_player": "Museplay 四段"
+}

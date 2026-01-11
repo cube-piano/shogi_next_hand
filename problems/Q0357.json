@@ -1,0 +1,27 @@
+{
+    "id": "Q0357",
+    "date": "2026/01/10",
+    "sfen": "l1g4rl/1p2ksg2/p1n1pp3/3N1n3/8p/2P3sS1/P1NPPP1PP/2GSK4/L5R1L w 2B6Pg 90",
+    "last_move": {
+        "usi": "N*6d",
+        "from": null,
+        "to": "6d",
+        "piece": "N",
+        "promote": false,
+        "drop": true
+    },
+    "answer_hand": [
+        "△６二玉(52)"
+    ],
+    "real_hand": "△４一玉(52)",
+    "after_hands": [
+        [
+            "△６二玉(52)",
+            "▲９六角打"
+        ]
+    ],
+    "current_eval": 1900,
+    "after_eval": 2418,
+    "black_player": "cardin 六段",
+    "white_player": "Museplay 四段"
+}
