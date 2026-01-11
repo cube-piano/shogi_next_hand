@@ -1,0 +1,36 @@
+{
+    "id": "Q0163",
+    "date": "2026/01/10",
+    "sfen": "ln6+B/1r2P1+S2/2p2g2n/p3ps2p/1p7/P1PP1gksP/1PSR1p3/1KG2+p2L/LN7 b GLPbn4p 99",
+    "last_move": {
+        "usi": "3e3f",
+        "from": "3e",
+        "to": "3f",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲４二成銀(32)"
+    ],
+    "real_hand": "▲１二馬(11)",
+    "after_hands": [
+        [
+            "▲４二成銀(32)",
+            "△５三金(43)",
+            "▲６五歩(66)",
+            "△５六金(46)",
+            "▲６九飛(67)",
+            "△２五桂(13)",
+            "▲１二馬(11)",
+            "△４五桂打",
+            "▲３四馬(12)",
+            "△８六歩(85)",
+            "▲同歩(87)"
+        ]
+    ],
+    "current_eval": -1810,
+    "after_eval": -2025,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}

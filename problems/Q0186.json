@@ -1,0 +1,36 @@
+{
+    "id": "Q0186",
+    "date": "2026/01/10",
+    "sfen": "l8/1r2P4/9/pP2+R3+B/2P4+S1/P3ggp1P/1K1+p1p+n1+s/6k1+b/LN1G5 w GSNL3Psnl6p 154",
+    "last_move": {
+        "usi": "7f7e",
+        "from": "7f",
+        "to": "7e",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△７三桂打"
+    ],
+    "real_hand": "△８五香打",
+    "after_hands": [
+        [
+            "△７三桂打",
+            "▲７六銀打",
+            "△６六金(56)",
+            "▲７四歩(75)",
+            "△８四飛(82)",
+            "▲８五歩打",
+            "△６五銀打",
+            "▲同銀(76)",
+            "△８五飛(84)",
+            "▲８六金打",
+            "△６五金(66)"
+        ]
+    ],
+    "current_eval": -2585,
+    "after_eval": -2305,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}
