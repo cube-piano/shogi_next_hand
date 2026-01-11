@@ -1,0 +1,35 @@
+{
+    "id": "Q0214",
+    "date": "2026/01/10",
+    "sfen": "l8/r3P1+S2/5+R3/p3psg1+B/1p4p2/P1P2g1sP/1PS2p+nk1/1KG2+p2+b/LN7 w GNL3Pnl4p 118",
+    "last_move": {
+        "usi": "7c4c",
+        "from": "7c",
+        "to": "4c",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "△３八玉(27)"
+    ],
+    "real_hand": "△４五金(34)",
+    "after_hands": [
+        [
+            "△３八玉(27)",
+            "▲３四龍(43)",
+            "△４五馬(18)",
+            "▲２四龍(34)",
+            "△２七銀(26)",
+            "▲２三馬(14)",
+            "△９三飛(92)",
+            "▲４五馬(23)",
+            "△同銀(44)",
+            "▲６九香打"
+        ]
+    ],
+    "current_eval": -1457,
+    "after_eval": -1186,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}

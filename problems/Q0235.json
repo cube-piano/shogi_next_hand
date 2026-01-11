@@ -1,0 +1,37 @@
+{
+    "id": "Q0235",
+    "date": "2026/01/10",
+    "sfen": "KR7/4P4/1+P7/p3n3+B/2P4+S1/P3ggp1P/4+pp+n1+s/6k1+b/+l2+r5 b GSN2L3Pgsnl6p 171",
+    "last_move": {
+        "usi": "6f5g",
+        "from": "6f",
+        "to": "5g",
+        "piece": null,
+        "promote": false,
+        "drop": false
+    },
+    "answer_hand": [
+        "▲８二歩打"
+    ],
+    "real_hand": "▲８二金打",
+    "after_hands": [
+        [
+            "▲８二歩打",
+            "△１六成銀(17)",
+            "▲３五銀打",
+            "△２七成銀(16)",
+            "▲７四歩(75)",
+            "△６六桂(54)",
+            "▲２三歩打",
+            "△７八銀打",
+            "▲４六銀(35)",
+            "△同金(56)",
+            "▲２六成銀(25)",
+            "△同成銀(27)"
+        ]
+    ],
+    "current_eval": -2020,
+    "after_eval": -2250,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}

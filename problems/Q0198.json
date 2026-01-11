@@ -1,0 +1,27 @@
+{
+    "id": "Q0198",
+    "date": "2026/01/10",
+    "sfen": "ln5nl/1r2g1gk1/2p2s1+P1/p3ps2p/1p7/P1PPS1p1P/1PS3N+b1/1KG2G3/LN2R2BL w 3P3p 74",
+    "last_move": {
+        "usi": "2d2c+",
+        "from": "2d",
+        "to": "2c",
+        "piece": null,
+        "promote": true,
+        "drop": false
+    },
+    "answer_hand": [
+        "△同金(32)"
+    ],
+    "real_hand": "△２三玉(22)",
+    "after_hands": [
+        [
+            "△同金(32)",
+            "▲１八角(29)"
+        ]
+    ],
+    "current_eval": -1023,
+    "after_eval": -745,
+    "black_player": "Museplay 四段",
+    "white_player": "javadna 四段"
+}
